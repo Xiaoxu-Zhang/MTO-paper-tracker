@@ -102,7 +102,7 @@ def get_msg(items, topic, aggregated=False):
     # change "topic" from url to string
     string_topic = urllib.parse.unquote(topic)
     # get name of topic
-    name_topic = string_topic.split(":")[-2]
+    name_topic = string_topic.split(" ")[-2]
 
     # print information of topic
     msg = f"## [{name_topic}](https://dblp.org/search?q={topic})\\n\\n"

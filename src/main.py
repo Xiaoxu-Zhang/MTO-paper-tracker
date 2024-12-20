@@ -61,6 +61,7 @@ class Scaffold:
 
             # if there is any new items, we set flag to create a new issue
             if len(new_items) > 0:
+                self.update_readme(env, cfg)
                 flag = True
 
             # only when new items >0 in this topic we creat the msg
@@ -87,6 +88,50 @@ class Scaffold:
                     f.write("MSG=$'" + aggregated_msg + msg + "'")
                     # f.write("MSG=$'" + msg + "'")
 
+    def update_readme(self, env: str = "dev", cfg: str = "./../config.yaml"):
+        cfg = init(cfg_path=cfg)
+        logger.info(f"running with env: {env} and cfg: {cfg}")
+        cache_path = cfg["cache_path"] / "dblp.yaml"
+        papers = yaml.safe_load(open(cache_path, "r")) if cache_path.exists() else {}
+        if papers is None:
+            papers = {}
+
+        # Convert dictionary to list of papers
+        papers_list = list(papers.values())
+        papers_list = sum(papers_list, [])
+        # 2. 按年份排序，最新的在表格前面
+        papers_list.sort(key=lambda x: x['year'], reverse=True)
+
+        # 3. 创建Markdown表格
+        table_lines = ["| Index | Year | type | Title | Authors | Venue | DOI |",
+                       "|-------|------|------|-------|---------|-------|-----|"]
+        total = len(papers_list)
+        for idx, paper in enumerate(papers_list):
+            authors = paper['author']
+            table_line = f"| {total-idx} | {paper['year']} | {paper['type']} | {paper['title']} | {authors} | {paper['venue']} | [{paper['doi']}]({paper['ee']}) |"
+            table_lines.append(table_line)
+
+        markdown_table = "\n".join(table_lines)
+
+        # 4. 更新 README.md 文件
+        readme_path = '../README.md'
+        with open(readme_path, 'r') as file:
+            lines = file.readlines()
+
+        new_lines = []
+        for line in lines:
+            if line.startswith("## All Papers"):
+                new_lines.append(line)
+                new_lines.append("\n")
+                new_lines.append(markdown_table)
+                new_lines.append("\n\n")
+                break
+            else:
+                new_lines.append(line)
+
+        with open(readme_path, 'w') as file:
+            file.writelines(new_lines)
+
 
 if __name__ == "__main__":
-    Fire(Scaffold)
+    Fire(Scaffold).run()

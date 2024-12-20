@@ -20,6 +20,8 @@ class Scaffold:
         cache_path = cfg["cache_path"] / "dblp.yaml"
         dblp_cache = yaml.safe_load(open(cache_path, "r")) if cache_path.exists() else {}
         # logger.info(f"dblp cache: {dblp_cache}")
+        if dblp_cache is None:
+            dblp_cache = {}
         dblp_new_cache = {}
 
         dblp_url = cfg["dblp"]["url"]

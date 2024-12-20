@@ -108,7 +108,7 @@ class Scaffold:
         total = len(papers_list)
         for idx, paper in enumerate(papers_list):
             authors = paper['author']
-            table_line = f"| [{total-idx}]({paper['url']}) | {paper['year']} | {paper['type']} | {paper['title']} | {authors} | {paper['venue']} | [{paper['doi']}]({paper['ee']}) |"
+            table_line = f"| [{total-idx}]({paper['ee']}) | {paper['year']} | {paper['type']} | {paper['title']} | {authors} | {paper['venue']} | {paper['doi']} |"
             table_lines.append(table_line)
 
         markdown_table = "\n".join(table_lines)

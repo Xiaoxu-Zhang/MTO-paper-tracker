@@ -25,34 +25,35 @@ class PaperWatcher:
         return cached_data
 
     def run(self):
-        flag, aggregated_msg, msg = self.update_cached_data()
+        msg = self.update_cached_data()
         self.update_readme()
-        if self.mode == "prod":
+        if self.mode == "prod" and msg != '':
             import os
             env_file = os.getenv("GITHUB_ENV")
-            if flag:
-                with open(env_file, "a") as f:
-                    f.write(f"MSG=$'{aggregated_msg}{msg}'")
+            with open(env_file, "a") as f:
+                f.write(f"MSG=$'{msg}'")
 
     def generate_message(self):
         table_lines=[]
         for topic in self.new_data.keys():
             items = self.new_data[topic]
             total = len(items)
-            table_lines.append(f"## Explore {total} new papers about {topic}\\n")
-            table_lines = ["| Index | Year | Title | Venue |",
-                           "|-------|------|-------|-------|"]
-            # Github issue allow max 65535 characters, so we show the first 10 items for one topic
-            items_showing = min(10, total)
-            for idx, item in enumerate(items[:items_showing]):
-                table_lines.append(f"| [{idx}]({item['url']}) | {item['year']} | {item['title']} | {item['venue']}")
+            if total > 0:
+                table_lines.append(f"## Explore {total} new papers about {topic}\\n")
+                table_lines = ["| Index | Year | Title | Venue |",
+                               "|-------|------|-------|-------|"]
+                # Github issue allow max 65535 characters, so we show the first 10 items for one topic
+                items_showing = min(10, total)
+                for idx, item in enumerate(items[:items_showing]):
+                    table_lines.append(f"| [{idx}]({item['url']}) | {item['year']} | {item['title']} | {item['venue']}")
+                if total > items_showing:
+                    table_lines.append(f"| ... | ... | ... | ... |")
         return "\\n".join(table_lines)
 
 
     def update_cached_data(self):
         cached_data = self.load_cached_data()
         aggregated_msg = ""
-        flag = False
         topics = self.config[self.channel]["topics"]
         logger.info(f"topics: {topics}")
         for topic in topics:
@@ -80,7 +81,7 @@ class PaperWatcher:
         msg = self.generate_message()
         yaml.safe_dump(cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
 
-        return flag, aggregated_msg, msg
+        return aggregated_msg, msg
 
 
     def update_readme(self):

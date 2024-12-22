@@ -53,7 +53,6 @@ class PaperWatcher:
 
     def update_cached_data(self):
         cached_data = self.load_cached_data()
-        aggregated_msg = ""
         topics = self.config[self.channel]["topics"]
         logger.info(f"topics: {topics}")
         for topic in topics:

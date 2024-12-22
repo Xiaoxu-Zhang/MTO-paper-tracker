@@ -38,10 +38,13 @@ def request_serp(params, depth=-1):
         data = request_serp_data(params)
         if data is not None:
             all_items += refine_serp_items(data)
-        serpapi_pagination = data.get("serpapi_pagination", {})
-        next_url = serpapi_pagination.get("next", None)
-        params = init_serp_params(next_url) if next_url else None
-        curr_depth += 1
+            serpapi_pagination = data.get("serpapi_pagination", {})
+            next_url = serpapi_pagination.get("next", None)
+            params = init_serp_params(next_url) if next_url else None
+            curr_depth += 1
+        else:
+            logger.error(f"data is None")
+            params = None
         if curr_depth > depth > 0:
             return all_items
     return all_items

@@ -3,3 +3,4 @@ requests
 loguru
 ezkfg
 pyyaml
+google-search-results

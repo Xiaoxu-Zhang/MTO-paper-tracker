@@ -5,5 +5,12 @@ dblp:
     - "manytask%20optimization"
     - "multi-task%20optimization"
     - "multitasking%20optimization"
-  mails:
-    - "xxzhang_official@163.com"
+
+serp:
+    topics:
+        # allintitle: optimization "many-task" OR "multitask" OR "multitasking" OR "multi-task" -learning
+        - "allintitle: optimization \"many-task\" OR \"multitask\" OR \"multitasking\" OR \"multi-task\" -learning"
+
+channel: "serp" # within [serp, dblp]
+cache_path: "cached"
+readme_path: "README.md"

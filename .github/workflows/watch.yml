@@ -24,10 +24,10 @@ jobs:
       # ============================================
       # TODO [√] 创建 Python3.6+ 编译环境
       # ============================================
-      - name: Set up Python 3.8
+      - name: Set up Python 3.9
         uses: actions/setup-python@v3
         with:
-          python-version: 3.8
+          python-version: 3.9
       # ============================================
       # TODO [√] 安装 Project 第三方依赖
       # ============================================
@@ -38,9 +38,9 @@ jobs:
       # ============================================
       # TODO [√] 测试 Scaffold 脚手架指令
       # ============================================
-      - name: Run dblp watcher
+      - name: Run watcher
         run: |
-          cd src && python main.py run --env=${{ env.RUN_ENV }}
+          python setup.py --mode=${{ env.RUN_ENV }} run
 
       - name: Setup var
         id: vars

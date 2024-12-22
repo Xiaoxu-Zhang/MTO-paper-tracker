@@ -126,11 +126,14 @@ def refine_serp_items(json_data=None):
         except ValueError as e:
             logger.info(f"venue is {venue}, {e}")
             venue, year = ["-", "-"]
+        cited_by = entry.get("inline_links", {})
+        cited_by = cited_by.get("cited_by", {})
+        cited_by = cited_by.get("total", 0)
         paper_info = {
             "title": entry.get("title", ""),
             "authors": authors.strip(),
             "url": entry.get("link", ""),
-            "cited_by": entry["inline_links"]["cited_by"]["total"],
+            "cited_by": cited_by,
             "venue": venue,
             "year": year.strip(),
         }

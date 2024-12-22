@@ -1,15 +1,15 @@
-import sys
+import ezkfg as ez
+import json
 import os
+import random
+import requests
+import sys
+import time
 import yaml
+
 from loguru import logger
 from pathlib import Path
-import ezkfg as ez
-import urllib.parse
-import requests
-import json
-import time
-import random
-
+from serpapi import GoogleSearch
 
 def init_log():
     """Initialize loguru log information"""
@@ -31,16 +31,101 @@ def init_log():
     return logger
 
 
-def init_path(cfg):
-    cfg["cache_path"] = Path("./../cached")
-    cfg["cache_path"].mkdir(parents=True, exist_ok=True)
+def request_serp(params, depth=-1):
+    all_items = []
+    curr_depth = 0
+    while params is not None:
+        data = request_serp_data(params)
+        if data is not None:
+            all_items += refine_serp_items(data)
+        serpapi_pagination = data.get("serpapi_pagination", {})
+        next_url = serpapi_pagination.get("next", None)
+        params = init_serp_params(next_url) if next_url else None
+        curr_depth += 1
+        if curr_depth > depth > 0:
+            return all_items
+    return all_items
 
-    return cfg
+
+def request_serp_data(params):
+    try:
+        search = GoogleSearch(params)
+    except Exception as e:
+        logger.error(f"Exception: {e}")
+        return None
+    results = search.get_json()
+    status = results["search_metadata"]["status"]
+    total = results["search_information"]["total_results"]
+    prev_total = yaml.safe_load("cached/total.yaml")
+    if prev_total is None:
+        prev_total = {"google_scholar": 0}
+    if total >= prev_total.get("google_scholar"):
+        return None
+    if status == "Success":
+        return results
+    else:
+        logger.error(f"SerpAPI request failed")
 
 
-def init(cfg_path: str):
+def init_serp_params(target_url):
+    from urllib.parse import urlparse, parse_qs
+    api_key = os.getenv("SERP_API_KEY")
+    if not api_key:
+        print("SerpAPI API Key not found in environment variables.")
+        return
+    if "https" in target_url:
+        parsed_url = urlparse(target_url)
+        query_params = parse_qs(parsed_url.query)
+        search_parameters = {
+            "engine": query_params.get("engine", [""])[0],
+            "q": query_params.get("q", [""])[0],
+            "hl": query_params.get("hl", [""])[0],
+            "start": int(query_params.get("start", [0])[0]),
+            "as_sdt": query_params.get("as_sdt", [""])[0],
+            "api_key": api_key
+        }
+    else:
+        search_parameters = {
+            "engine": "google_scholar",
+            "q": target_url,
+            "hl": "en",
+            "start": 0,
+            "as_sdt": "0,11",
+            "api_key": api_key
+        }
+    return search_parameters
+
+
+def refine_serp_items(json_data=None):
+    if json_data is None:
+        with open('cached/serp_res.json', 'r', encoding='utf-8') as file:
+            json_data = json.load(file)
+        data = json_data.get("organic_results", [])
+    else:
+        data = json_data.get("organic_results", [])
+    papers = []
+    for entry in data:
+        summary = entry["publication_info"]["summary"]
+        summary = summary.split(" - ")
+        authors, venue, _ = summary
+        venue, year = venue.split(",")
+        paper_info = {
+            "title": entry.get("title", ""),
+            "authors": authors.strip(),
+            "url": entry.get("link", ""),
+            "cited_by": entry["inline_links"]["cited_by"]["total"],
+            "venue": venue,
+            "year": year.strip(),
+        }
+        papers.append(paper_info)
+
+    return papers
+
+
+def load_config(cfg_path: str):
     cfg = ez.Config().load(cfg_path)
-    cfg = init_path(cfg)
+    cfg["cache_path"] = Path(cfg["cache_path"])
+    cfg["cache_path"].mkdir(parents=True, exist_ok=True)
     init_log()
     return cfg
 
@@ -98,28 +183,9 @@ def get_dblp_items(dblp_data):
     return res_items
 
 
-def get_msg(items, topic, aggregated=False):
-    # change "topic" from url to string
-    string_topic = urllib.parse.unquote(topic)
-    # get name of topic
-    name_topic = string_topic.split(" ")[-2]
-
-    # print information of topic
-    msg = f"## [{name_topic}](https://dblp.org/search?q={topic})\\n\\n"
-    msg += f"""Explore {len(items)} new papers about {name_topic}.\\n\\n"""
-
-    if aggregated == False:
-        for item in items:
-            msg += f"{item['title']}\\n"
-            # msg += f"[{item['title']}]({item['url']})\\n"
-            # msg += f"- Authors: {item['author']}\\n"
-            # msg += f"- Venue: {item['venue']}\\n"
-            msg += f"- Year: {item['year']}\\n\\n"
-
-    msg = msg.replace("'", "")
-    return msg
-
-def request_data(url, retry=10, sleep_time=5):
+def request_dblp(topic, retry=10, sleep_time=5):
+    api_url = "https://dblp.org/search/publ/api?q={}&format=json&h=1000"
+    url = api_url.format(topic)
     try:
         time.sleep(sleep_time + random.random() * 3)
         response = requests.get(url)
@@ -130,7 +196,7 @@ def request_data(url, retry=10, sleep_time=5):
         logger.error(f"Exception: {e}")
         if retry > 0:
             logger.info(f"retrying {url}")
-            return request_data(url, retry - 1)
+            return request_dblp(url, retry - 1)
         else:
             logger.error(f"Failed to request {url}")
         return None

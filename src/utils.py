@@ -56,10 +56,16 @@ def request_serp_data(params):
     results = search.get_json()
     status = results["search_metadata"]["status"]
     total = results["search_information"]["total_results"]
-    prev_total = yaml.safe_load("cached/total.yaml")
-    if prev_total is None:
+    try:
+        prev_total = yaml.safe_load(open("cached/total.yaml", "r"))
+    except FileNotFoundError:
         prev_total = {"google_scholar": 0}
     if total >= prev_total.get("google_scholar"):
+        total_yaml = {"google_scholar": total}
+        try:
+            yaml.dump(total_yaml, open("cached/total.yaml", "w"))
+        except Exception as e:
+            logger.error(f"Failed to save total.yaml, {e}")
         return None
     if status == "Success":
         return results

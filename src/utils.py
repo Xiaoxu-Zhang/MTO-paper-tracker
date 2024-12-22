@@ -116,8 +116,16 @@ def refine_serp_items(json_data=None):
     for entry in data:
         summary = entry["publication_info"]["summary"]
         summary = summary.split(" - ")
-        authors, venue, _ = summary
-        venue, year = venue.split(",")
+        try:
+            authors, venue, _ = summary
+        except ValueError as e:
+            logger.info(f"summary is {summary}, {e}")
+            authors, venue= ["Unknown", "Unknown"]
+        try:
+            venue, year = venue.split(",")
+        except ValueError as e:
+            logger.info(f"venue is {venue}, {e}")
+            venue, year = ["-", "-"]
         paper_info = {
             "title": entry.get("title", ""),
             "authors": authors.strip(),

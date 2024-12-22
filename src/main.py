@@ -1,121 +1,113 @@
+from pathlib import Path
 from loguru import logger
-from fire import Fire
-from utils import get_msg, init, get_dblp_items, request_data
+from src.utils import request_serp
+from utils import load_config, get_dblp_items, request_dblp, init_serp_params
 import yaml
 
 
+class PaperWatcher:
+    def __init__(self, mode='dev', config_path="config.yaml"):
+        self.config = load_config(config_path)
+        self.mode = mode
+        self.query_depth = 3 if mode == "dev" else -1
+        self.readme_path = self.config["readme_path"]
+        self.channel = self.config["channel"]
+        self.cache_path = Path(f"{self.config['cache_path']}/{self.channel}.yaml")
+        self.cached_data = self.load_cached_data()
+        self.new_data = {}
 
-class Scaffold:
-    def __init__(self):
-        pass
+        logger.info(f"running with {self.mode} mode")
 
-    def run(self, env: str = "dev", cfg: str = "./../config.yaml"):
-        cfg = init(cfg_path=cfg)
+    def load_cached_data(self):
+        cached_data = yaml.safe_load(open(self.cache_path, "r")) if self.cache_path.exists() else {}
+        if cached_data is None:
+            cached_data = {}
+        return cached_data
 
-        logger.info(f"running with env: {env} and cfg: {cfg}")
-
-        # dblp
-
-        # load cache
-        cache_path = cfg["cache_path"] / "dblp.yaml"
-        dblp_cache = yaml.safe_load(open(cache_path, "r")) if cache_path.exists() else {}
-        # logger.info(f"dblp cache: {dblp_cache}")
-        if dblp_cache is None:
-            dblp_cache = {}
-        dblp_new_cache = {}
-
-        dblp_url = cfg["dblp"]["url"]
-        aggregated_msg = ""
-        msg = ""
-        flag = False
-
-        logger.info(f"topics: {cfg['dblp']['topics']}")
-
-        for topic in cfg["dblp"]["topics"]:
-            # random sleep to avoid being blocked
-            dblp_data = request_data(dblp_url.format(topic))
-
-            if dblp_data is None:
-                logger.error(f"dblp_data is None, topic: {topic}")
-                continue
-        
-            # 如果没有异常，则执行这里的代码
-            # logger.info(f"dblp_data: {dblp_data}")
-
-            # get items
-            items = get_dblp_items(dblp_data)
-            # logger.info(f"items: {items}")
-
-            # add new cache for this topic
-            cached_items = dblp_cache.get(
-                topic, []
-            )  # get the value of the key "topic" in dblp_cache, if not exist, return []
-            new_items = [item for item in items if item not in cached_items]  # get the new items
-            dblp_new_cache[topic] = new_items
-
-            if topic not in dblp_cache:
-                dblp_cache[topic] = []
-            dblp_cache[topic].extend(new_items)
-
-            logger.info(f"new_items: {new_items}")
-
-            # if there is any new items, we set flag to create a new issue
-            if len(new_items) > 0:
-                self.update_readme(env, cfg)
-                flag = True
-
-            # only when new items >0 in this topic we creat the msg
-            if len(new_items) > 0:
-                aggregated_msg += get_msg(new_items, topic, aggregated=True)
-                msg += get_msg(new_items, topic)
-            logger.info(f"aggregated_msg: {aggregated_msg}")
-            logger.info(f"msg: {msg}")
-
-        # save cache
-        yaml.safe_dump(dblp_cache, open(cache_path, "w"), sort_keys=False, indent=2)
-
-        if env == "prod":
+    def run(self):
+        flag, aggregated_msg, msg = self.update_cached_data()
+        self.update_readme()
+        if self.mode == "prod":
             import os
-
             env_file = os.getenv("GITHUB_ENV")
-
-            # check if msg is too long
-            if len(msg) > 4096:
-                msg = msg[:4096] + "..."
-
             if flag:
                 with open(env_file, "a") as f:
-                    f.write("MSG=$'" + aggregated_msg + msg + "'")
-                    # f.write("MSG=$'" + msg + "'")
+                    f.write(f"MSG=$'{aggregated_msg}{msg}'")
 
-    def update_readme(self, env: str = "dev", cfg: str = "./../config.yaml"):
-        cfg = init(cfg_path=cfg)
-        logger.info(f"running with env: {env} and cfg: {cfg}")
-        cache_path = cfg["cache_path"] / "dblp.yaml"
-        papers = yaml.safe_load(open(cache_path, "r")) if cache_path.exists() else {}
-        if papers is None:
-            papers = {}
+    def generate_message(self):
+        table_lines=[]
+        for topic in self.new_data.keys():
+            items = self.new_data[topic]
+            total = len(items)
+            table_lines.append(f"## Explore {total} new papers about {topic}\\n")
+            table_lines = ["| Index | Year | Title | Venue |",
+                           "|-------|------|-------|-------|"]
+            # Github issue allow max 65535 characters, so we show the first 10 items for one topic
+            items_showing = min(10, total)
+            for idx, item in enumerate(items[:items_showing]):
+                table_lines.append(f"| [{idx}]({item['url']}) | {item['year']} | {item['title']} | {item['venue']}")
+        return "\\n".join(table_lines)
 
-        # Convert dictionary to list of papers
+
+    def update_cached_data(self):
+        cached_data = self.load_cached_data()
+        aggregated_msg = ""
+        flag = False
+        topics = self.config[self.channel]["topics"]
+        logger.info(f"topics: {topics}")
+        for topic in topics:
+            if self.channel == "dblp":
+                received_data = request_dblp(topic)
+                if received_data is None:
+                    logger.error(f"dblp data is None, topic: {topic}")
+                    continue
+                items = get_dblp_items(received_data)
+            else:
+                params = init_serp_params(topic)
+                items = request_serp(params=params, depth=self.query_depth)
+
+            topic_cached_items = cached_data.get(topic, [])
+            topic_new_items = [item for item in items if item not in topic_cached_items]
+            logger.info(f"total {len(topic_new_items)} new items about topic {topic}")
+
+            if topic not in cached_data:
+                cached_data[topic] = []
+            cached_data[topic].extend(topic_new_items)
+
+            if len(topic_new_items) > 0:
+                self.new_data[topic] = topic_new_items
+
+        msg = self.generate_message()
+        yaml.safe_dump(cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
+
+        return flag, aggregated_msg, msg
+
+
+    def update_readme(self):
+        papers = self.cached_data
         papers_list = list(papers.values())
         papers_list = sum(papers_list, [])
-        # 2. 按年份排序，最新的在表格前面
+
         papers_list.sort(key=lambda x: x['year'], reverse=True)
 
-        # 3. 创建Markdown表格
-        table_lines = ["| Index | Year | type | Title | Authors | Venue | DOI |",
-                       "|-------|------|------|-------|---------|-------|-----|"]
         total = len(papers_list)
-        for idx, paper in enumerate(papers_list):
-            authors = paper['author']
-            table_line = f"| [{total-idx}]({paper['ee']}) | {paper['year']} | {paper['type']} | {paper['title']} | {authors} | {paper['venue']} | {paper['doi']} |"
-            table_lines.append(table_line)
+        if self.channel == "dblp":
+            table_lines = ["| Index | Year | type | Title | Authors | Venue | DOI |",
+                           "|-------|------|------|-------|---------|-------|-----|"]
+            for idx, paper in enumerate(papers_list):
+                authors = paper['author']
+                table_line = f"| [{total-idx}]({paper['ee']}) | {paper['year']} | {paper['type']} | {paper['title']} | {authors} | {paper['venue']} | {paper['doi']} |"
+                table_lines.append(table_line)
+        else:
+            table_lines = ["| Index | Year | Title | Venue | CitedBy |",
+                           "|-------|------|-------|-------|---------|"]
+            for idx, paper in enumerate(papers_list):
+                table_line = f"| [{total-idx}]({paper['url']}) | {paper['year']} | {paper['title']} | {paper['venue']} | {paper['cited_by']} |"
+                table_lines.append(table_line)
 
         markdown_table = "\n".join(table_lines)
 
-        # 4. 更新 README.md 文件
-        readme_path = '../README.md'
-        with open(readme_path, 'r') as file:
+        with open(self.readme_path, 'r') as file:
             lines = file.readlines()
 
         new_lines = []
@@ -129,9 +121,10 @@ class Scaffold:
             else:
                 new_lines.append(line)
 
-        with open(readme_path, 'w') as file:
+        with open(self.readme_path, 'w') as file:
             file.writelines(new_lines)
 
 
 if __name__ == "__main__":
-    Fire(Scaffold)
+    dblp = PaperWatcher(mode='dev')
+    dblp.update_readme()

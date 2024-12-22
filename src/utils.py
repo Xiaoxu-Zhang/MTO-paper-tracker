@@ -63,7 +63,7 @@ def request_serp_data(params):
         prev_total = yaml.safe_load(open("cached/total.yaml", "r"))
     except FileNotFoundError:
         prev_total = {"google_scholar": 0}
-    if total >= prev_total.get("google_scholar"):
+    if total == prev_total.get("google_scholar"):
         total_yaml = {"google_scholar": total}
         try:
             yaml.dump(total_yaml, open("cached/total.yaml", "w"))

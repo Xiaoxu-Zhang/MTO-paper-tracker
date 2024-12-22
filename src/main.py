@@ -81,7 +81,7 @@ class PaperWatcher:
         msg = self.generate_message()
         yaml.safe_dump(cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
 
-        return aggregated_msg, msg
+        return msg
 
 
     def update_readme(self):

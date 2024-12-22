@@ -9,7 +9,7 @@ class PaperWatcher:
     def __init__(self, mode='dev', config_path="config.yaml"):
         self.config = load_config(config_path)
         self.mode = mode
-        self.query_depth = 3 if mode == "dev" else -1
+        self.query_depth = 2
         self.readme_path = self.config["readme_path"]
         self.channel = self.config["channel"]
         self.cache_path = Path(f"{self.config['cache_path']}/{self.channel}.yaml")
@@ -78,6 +78,7 @@ class PaperWatcher:
                 self.new_data[topic] = topic_new_items
 
         msg = self.generate_message()
+        msg.replace("'", "")
         yaml.safe_dump(cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
 
         return msg

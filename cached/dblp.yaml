@@ -318,6 +318,28 @@ many-task%20optimization:
   doi: 10.1145/3638530.3654232
   ee: https://doi.org/10.1145/3638530.3654232
   url: https://dblp.org/rec/conf/gecco/YangWTWYL24
+- author: Yudong Yang, Kai Wu 0003, Xiangyi Teng, Handing Wang, He Yu, Jing Liu 0006
+  title: 'Exploring Knowledge Transfer in Evolutionary Many-task Optimization: A Complex
+    Network Perspective.'
+  venue: CoRR
+  year: '2024'
+  type: Informal and Other Publications
+  access: open
+  key: journals/corr/abs-2407-08918
+  doi: 10.48550/ARXIV.2407.08918
+  ee: https://doi.org/10.48550/arXiv.2407.08918
+  url: https://dblp.org/rec/journals/corr/abs-2407-08918
+- author: Jiajun Zhou, Shijie Rao, Liang Gao 0001, Chunjiang Zhang, Hongtao Tang,
+    Yun Li 0002, Felix T. S. Chan
+  title: Solving many-task optimization problems via online intertask learning.
+  venue: Expert Syst. Appl.
+  year: '2023'
+  type: Journal Articles
+  access: closed
+  key: journals/eswa/ZhouRGZTLC23
+  doi: 10.1016/J.ESWA.2023.120110
+  ee: https://doi.org/10.1016/j.eswa.2023.120110
+  url: https://dblp.org/rec/journals/eswa/ZhouRGZTLC23
 manytask%20optimization:
 - author: Rung-Tzuo Liaw, Chuan-Kang Ting
   title: Evolutionary Manytasking Optimization Based on Symbiosis in Biocoenosis.

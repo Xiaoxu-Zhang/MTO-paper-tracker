@@ -58,7 +58,8 @@ class PaperWatcher:
                 # Github issue allow max 65535 characters, so we show the first 10 items for one topic
                 items_showing = min(10, total)
                 for idx, item in enumerate(items[:items_showing]):
-                    markdown_lines.append(f"{idx+1}. [[{item['year']}]({item['url']})] {item['title']} --on-- {item['venue']}")
+                    link_key = 'url' if self.channel == 'serp' else 'ee'
+                    markdown_lines.append(f"{idx+1}. [[{item['year']}]({item[link_key]})] {item['title']} --on-- {item['venue']}")
                 if total > items_showing:
                     markdown_lines.append(f"...")
         msg = "\n".join(markdown_lines)

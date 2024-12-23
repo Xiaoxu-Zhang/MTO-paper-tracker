@@ -48,21 +48,20 @@ class PaperWatcher:
                     f.write(f"MSG<<EOF\n{msg}\nEOF")
 
     def generate_message(self):
-        table_lines=[]
+        markdown_lines=[]
         for topic in self.new_data.keys():
             items = self.new_data[topic]
             total = len(items)
             if total > 0:
-                table_lines.append(f"## Explore {total} new papers about {topic}\n")
-                table_lines.append("| Index | Year | Title | Venue |")
-                table_lines.append("|-------|------|-------|-------|")
+                markdown_lines.append(f"## Explore {total} new papers about {topic.replace('%20', ' ')}\n")
+                markdown_lines.append("Click [year] to jump to paper page.")
                 # Github issue allow max 65535 characters, so we show the first 10 items for one topic
                 items_showing = min(10, total)
                 for idx, item in enumerate(items[:items_showing]):
-                    table_lines.append(f"| [{idx}]({item['url']}) | {item['year']} | {item['title']} | {item['venue']}")
+                    markdown_lines.append(f"{idx+1}. [[{item['year']}]({item['url']})] {item['title']} --on-- {item['venue']}")
                 if total > items_showing:
-                    table_lines.append(f"| ... | ... | ... | ... |")
-        msg = "\n".join(table_lines)
+                    markdown_lines.append(f"...")
+        msg = "\n".join(markdown_lines)
         return msg
 
 

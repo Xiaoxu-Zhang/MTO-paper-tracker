@@ -614,3 +614,34 @@
   cited_by: 208
   venue: IEEE transactions on cybernetics
   year: '2015'
+- title: 'A review on evolutionary multitask optimization: Trends and challenges'
+  authors: "T Wei, S Wang, J Zhong, D Liu\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9665768/
+  cited_by: 125
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: 'Evolutionary multitask optimization: a methodological overview, challenges,
+    and future research directions'
+  authors: E Osaba, J Del Ser, AD Martinez, A Hussain
+  url: https://link.springer.com/article/10.1007/s12559-022-10012-8
+  cited_by: 76
+  venue: Cognitive Computation
+  year: '2022'
+- title: Multiobjective multifactorial optimization in evolutionary multitasking
+  authors: "A Gupta, YS Ong, L Feng\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/7464295/
+  cited_by: 386
+  venue: "IEEE transactions on \u2026"
+  year: '2016'
+- title: Self-regulated evolutionary multitask optimization
+  authors: "X Zheng, AK Qin, M Gong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/8666053/
+  cited_by: 175
+  venue: "IEEE Transactions on \u2026"
+  year: '2019'
+- title: Generalized multitasking for evolutionary optimization of expensive problems
+  authors: J Ding, C Yang, Y Jin, T Chai
+  url: https://ieeexplore.ieee.org/abstract/document/8231172/
+  cited_by: 248
+  venue: "IEEE Transactions on \u2026"
+  year: '2017'

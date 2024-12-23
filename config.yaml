@@ -10,7 +10,7 @@ serp:
     topics:
         # allintitle: optimization "many-task" OR "multitask" OR "multitasking" OR "multi-task" -learning
         - "allintitle: optimization \"many-task\" OR \"multitask\" OR \"multitasking\" OR \"multi-task\" -learning"
-    query_depth: 2  # how many pages to scrape
+    query_depth: 10  # how many pages to scrape
 
 channel: "serp" # within [serp, dblp]
 cache_path: "cached"

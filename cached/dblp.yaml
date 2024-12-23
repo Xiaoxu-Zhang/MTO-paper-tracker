@@ -1,36 +1,4 @@
 many-task%20optimization:
-- author: Lu Li, Zhengyi Chai, Yalun Li, Yan-Yang Cheng, Ying Nie
-  title: Many-objective multi-tasking optimization using adaptive differential evolutionary
-    and reference-point based nondominated sorting.
-  venue: Expert Syst. Appl.
-  year: '2024'
-  type: Journal Articles
-  access: closed
-  key: journals/eswa/LiCLCN24
-  doi: 10.1016/J.ESWA.2024.123336
-  ee: https://doi.org/10.1016/j.eswa.2024.123336
-  url: https://dblp.org/rec/journals/eswa/LiCLCN24
-- author: Hangyu Zhu, Xilu Wang, Yaochu Jin
-  title: Federated Many-Task Bayesian Optimization.
-  venue: IEEE Trans. Evol. Comput.
-  year: '2024'
-  type: Journal Articles
-  access: closed
-  key: journals/tec/ZhuWJ24
-  doi: 10.1109/TEVC.2023.3279775
-  ee: https://doi.org/10.1109/TEVC.2023.3279775
-  url: https://dblp.org/rec/journals/tec/ZhuWJ24
-- author: Yudong Yang, Kai Wu 0003, Xiangyi Teng, Handing Wang, He Yu, Jing Liu 0006
-  title: 'Exploring Knowledge Transfer in Evolutionary Many-task Optimization: A Complex
-    Network Perspective.'
-  venue: GECCO Companion
-  year: '2024'
-  type: Conference and Workshop Papers
-  access: closed
-  key: conf/gecco/YangWTWYL24
-  doi: 10.1145/3638530.3654232
-  ee: https://doi.org/10.1145/3638530.3654232
-  url: https://dblp.org/rec/conf/gecco/YangWTWYL24
 - author: Yudong Yang, Kai Wu 0003, Xiangyi Teng, Handing Wang, He Yu, Jing Liu 0006
   title: 'Exploring Knowledge Transfer in Evolutionary Many-task Optimization: A Complex
     Network Perspective.'

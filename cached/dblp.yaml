@@ -306,6 +306,40 @@ many-task%20optimization:
   doi: 10.1145/1646468.1646472
   ee: https://doi.org/10.1145/1646468.1646472
   url: https://dblp.org/rec/conf/sc/YinYK09
+- author: Yan-Yang Cheng, Zheng-Yi Chai, Ya-Lun Li
+  title: Many-objective many-task optimization using reference-points-based nondominated
+    sorting approach.
+  venue: Future Gener. Comput. Syst.
+  year: '2023'
+  type: Journal Articles
+  access: closed
+  key: journals/fgcs/ChengCL23
+  doi: 10.1016/J.FUTURE.2023.03.034
+  ee: https://doi.org/10.1016/j.future.2023.03.034
+  url: https://dblp.org/rec/journals/fgcs/ChengCL23
+- author: Nouredine Melab, Jan Gmys, Mohand-Said Mezmaz, Daniel Tuyttens
+  title: Multi-core versus many-core computing for many-task Branch-and-Bound applied
+    to big optimization problems.
+  venue: Future Gener. Comput. Syst.
+  year: '2018'
+  type: Journal Articles
+  access: closed
+  key: journals/fgcs/MelabGMT18
+  doi: 10.1016/J.FUTURE.2016.12.039
+  ee: https://doi.org/10.1016/j.future.2016.12.039
+  url: https://dblp.org/rec/journals/fgcs/MelabGMT18
+- author: Najwa Kouka, Rahma Fourati, Asma Baghdadi, Patrick Siarry, Mohamed Adel
+    Alimi
+  title: A Mutual Information-Based Many-Objective Optimization Method for EEG Channel
+    Selection in the Epileptic Seizure Prediction Task.
+  venue: Cogn. Comput.
+  year: '2024'
+  type: Journal Articles
+  access: closed
+  key: journals/cogcom/KoukaFBSA24
+  doi: 10.1007/S12559-024-10261-9
+  ee: https://doi.org/10.1007/s12559-024-10261-9
+  url: https://dblp.org/rec/journals/cogcom/KoukaFBSA24
 manytask%20optimization:
 - author: Rung-Tzuo Liaw, Chuan-Kang Ting
   title: Evolutionary Manytasking Optimization Based on Symbiosis in Biocoenosis.

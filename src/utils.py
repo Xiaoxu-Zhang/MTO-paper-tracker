@@ -30,53 +30,65 @@ def init_log():
 
     return logger
 
+def load_previous_total():
+    try:
+        prev_total = yaml.safe_load(open("cached/total.yaml", "r"))
+        prev_total = prev_total.get("google_scholar", 0)
+    except FileNotFoundError:
+        prev_total = 0
+    return prev_total
+
+def update_total(total):
+    total_yaml = {"google_scholar": total}
+    try:
+        yaml.safe_dump(total_yaml, open("cached/total.yaml", "w"))
+    except Exception as e:
+        logger.error(f"Failed to save total.yaml, {e}")
 
 def request_serp(params, depth=-1):
     all_items = []
-    curr_depth = 0
+    curr_depth = depth
+    prev_total = load_previous_total()
+    curr_total = None
     while params is not None:
-        data = request_serp_data(params)
+        if curr_depth <= 0:
+            break
+        data, curr_total = request_serp_data(params, prev_total)
         if data is not None:
             all_items += refine_serp_items(data)
             serpapi_pagination = data.get("serpapi_pagination", {})
             next_url = serpapi_pagination.get("next", None)
-            params = init_serp_params(next_url) if next_url else None
-            curr_depth += 1
+            params = init_serp_params(next_url)
+            curr_depth -= 1
         else:
-            logger.error(f"data is None")
+            logger.error(f"serp data is None")
             params = None
-        if curr_depth > depth > 0:
-            return all_items
+    if curr_total:
+        update_total(curr_total)
     return all_items
 
 
-def request_serp_data(params):
+def request_serp_data(params, prev_total):
     try:
         search = GoogleSearch(params)
+        results = search.get_json()
     except Exception as e:
-        logger.error(f"Exception: {e}")
-        return None
-    results = search.get_json()
-    status = results["search_metadata"]["status"]
-    total = results["search_information"]["total_results"]
-    try:
-        prev_total = yaml.safe_load(open("cached/total.yaml", "r"))
-    except FileNotFoundError:
-        prev_total = {"google_scholar": 0}
-    if total == prev_total.get("google_scholar"):
-        total_yaml = {"google_scholar": total}
-        try:
-            yaml.dump(total_yaml, open("cached/total.yaml", "w"))
-        except Exception as e:
-            logger.error(f"Failed to save total.yaml, {e}")
-        return None
+        logger.error(f"Request SerpAPI failed with exception: {e}")
+        return None, None
+
+    status = results.get("search_metadata", {}).get("status", {})
     if status == "Success":
-        return results
+        curr_total = results.get("search_information", {}).get("total_results", 0)
+        if curr_total > prev_total:
+            return results, curr_total
     else:
-        logger.error(f"SerpAPI request failed")
+        logger.error(f"SerpAPI request Status was {status}")
+        return None, None
 
 
 def init_serp_params(target_url):
+    if target_url is None:
+        return
     from urllib.parse import urlparse, parse_qs
     api_key = os.getenv("SERP_API_KEY")
     if not api_key:
@@ -107,11 +119,10 @@ def init_serp_params(target_url):
 
 def refine_serp_items(json_data=None):
     if json_data is None:
-        with open('cached/serp_res.json', 'r', encoding='utf-8') as file:
-            json_data = json.load(file)
-        data = json_data.get("organic_results", [])
+        return []
     else:
         data = json_data.get("organic_results", [])
+
     papers = []
     for entry in data:
         summary = entry["publication_info"]["summary"]

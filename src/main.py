@@ -9,9 +9,15 @@ class PaperWatcher:
     def __init__(self, mode='dev', config_path="config.yaml"):
         self.config = load_config(config_path)
         self.mode = mode
-        self.query_depth = 2
         self.readme_path = self.config["readme_path"]
         self.channel = self.config["channel"]
+
+        channel_cfg = self.config.get(self.channel, {})
+        if mode == "dev":
+            self.query_depth = 2
+        else:
+            self.query_depth = channel_cfg.get("query_depth", 2)
+
         self.cache_path = Path(f"{self.config['cache_path']}/{self.channel}.yaml")
         self.cached_data = self.load_cached_data()
         self.new_data = {}
@@ -24,14 +30,22 @@ class PaperWatcher:
             cached_data = {}
         return cached_data
 
+    @staticmethod
+    def preview_message(msg):
+        with open("preview", "w") as f:
+            f.write(f"MSG=${msg}")
+
     def run(self):
         msg = self.update_cached_data()
         self.update_readme()
-        if self.mode == "prod" and msg != '':
-            import os
-            env_file = os.getenv("GITHUB_ENV")
-            with open(env_file, "a") as f:
-                f.write(f"MSG=$'{msg}'")
+        if msg != '':
+            if self.mode == "dev":
+                self.preview_message(msg)
+            if self.mode == "prod":
+                import os
+                env_file = os.getenv("GITHUB_ENV")
+                with open(env_file, "a") as f:
+                    f.write(f"MSG=$'{msg}'")
 
     def generate_message(self):
         table_lines=[]
@@ -40,19 +54,19 @@ class PaperWatcher:
             total = len(items)
             if total > 0:
                 table_lines.append(f"## Explore {total} new papers about {topic}\\n")
-                table_lines = ["| Index | Year | Title | Venue |",
-                               "|-------|------|-------|-------|"]
+                table_lines.append("| Index | Year | Title | Venue |")
+                table_lines.append("|-------|------|-------|-------|")
                 # Github issue allow max 65535 characters, so we show the first 10 items for one topic
                 items_showing = min(10, total)
                 for idx, item in enumerate(items[:items_showing]):
                     table_lines.append(f"| [{idx}]({item['url']}) | {item['year']} | {item['title']} | {item['venue']}")
                 if total > items_showing:
                     table_lines.append(f"| ... | ... | ... | ... |")
-        return "\\n".join(table_lines)
+        msg = "\\n".join(table_lines)
+        return msg
 
 
     def update_cached_data(self):
-        cached_data = self.load_cached_data()
         topics = self.config[self.channel]["topics"]
         logger.info(f"topics: {topics}")
         for topic in topics:
@@ -66,20 +80,20 @@ class PaperWatcher:
                 params = init_serp_params(topic)
                 items = request_serp(params=params, depth=self.query_depth)
 
-            topic_cached_items = cached_data.get(topic, [])
+            topic_cached_items = self.cached_data.get(topic, [])
             topic_new_items = [item for item in items if item not in topic_cached_items]
             logger.info(f"total {len(topic_new_items)} new items about topic {topic}")
 
-            if topic not in cached_data:
-                cached_data[topic] = []
-            cached_data[topic].extend(topic_new_items)
+            if topic not in self.cached_data:
+                self.cached_data[topic] = []
+            self.cached_data[topic].extend(topic_new_items)
 
             if len(topic_new_items) > 0:
                 self.new_data[topic] = topic_new_items
 
         msg = self.generate_message()
         msg.replace("'", "")
-        yaml.safe_dump(cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
+        yaml.safe_dump(self.cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
 
         return msg
 

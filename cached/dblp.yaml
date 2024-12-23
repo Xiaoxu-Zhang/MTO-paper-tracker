@@ -1,35 +1,4 @@
 many-task%20optimization:
-- author: Sheng-Hao Wu, Zhi-Hui Zhan, Kay Chen Tan, Jun Zhang 0003
-  title: Transferable Adaptive Differential Evolution for Many-Task Optimization.
-  venue: IEEE Trans. Cybern.
-  year: '2023'
-  type: Journal Articles
-  access: open
-  key: journals/tcyb/WuZTZ23
-  doi: 10.1109/TCYB.2023.3234969
-  ee: https://doi.org/10.1109/TCYB.2023.3234969
-  url: https://dblp.org/rec/journals/tcyb/WuZTZ23
-- author: Huynh Thi Thanh Binh, Le Van Cuong, Ta Bao Thang, Nguyen Hoang Long
-  title: Ensemble Multifactorial Evolution With Biased Skill-Factor Inheritance for
-    Many-Task Optimization.
-  venue: IEEE Trans. Evol. Comput.
-  year: '2023'
-  type: Journal Articles
-  access: closed
-  key: journals/tec/BinhCTL23
-  doi: 10.1109/TEVC.2022.3227120
-  ee: https://doi.org/10.1109/TEVC.2022.3227120
-  url: https://dblp.org/rec/journals/tec/BinhCTL23
-- author: Yi Jiang, Zhi-Hui Zhan, Kay Chen Tan, Jun Zhang 0003
-  title: A Bi-Objective Knowledge Transfer Framework for Evolutionary Many-Task Optimization.
-  venue: IEEE Trans. Evol. Comput.
-  year: '2023'
-  type: Journal Articles
-  access: open
-  key: journals/tec/JiangZTZ23
-  doi: 10.1109/TEVC.2022.3210783
-  ee: https://doi.org/10.1109/TEVC.2022.3210783
-  url: https://dblp.org/rec/journals/tec/JiangZTZ23
 - author: Jiangjiang Zhang, Bei Gong, Muhammad Waqas 0001, Shanshan Tu, Zhu Han 0001
   title: A Hybrid Many-Objective Optimization Algorithm for Task Offloading and Resource
     Allocation in Multi-Server Mobile Edge Computing Networks.

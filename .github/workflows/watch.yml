@@ -47,10 +47,16 @@ jobs:
         id: vars
         run: |
           content=${{ env.MSG }}
-          content="${content//'%'/'%25'}"
-          content="${content//$'\n'/'%0A'}"
-          content="${content//$'\r'/'%0D'}"
-          echo "content=$content" >> $GITHUB_STATE
+          if [ -z "$content" ]; then
+            echo "MSG is empty"
+            echo "::set-output name=content::"
+          else
+            content="${content//'%'/'%25'}"
+            content="${content//$'\n'/'%0A'}"
+            content="${content//$'\r'/'%0D'}"
+            echo "content=$content" >> $GITHUB_STATE
+            echo "::set-output name=content::$content"
+          fi
       # ============================================
       # TODO [√] 更新仓库数据
       # ============================================
@@ -67,6 +73,7 @@ jobs:
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MSG: ${{ steps.vars.outputs.content }}
         with:
           filename: .github/issue-template.md
-          body: ${{ steps.vars.outputs.content }}
+          body: ${{ env.MSG }}

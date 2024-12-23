@@ -12,6 +12,6 @@ serp:
         - "allintitle: optimization \"many-task\" OR \"multitask\" OR \"multitasking\" OR \"multi-task\" -learning"
     query_depth: 10  # how many pages to scrape
 
-channel: "serp" # within [serp, dblp]
+channel: "dblp" # within [serp, dblp]
 cache_path: "cached"
 readme_path: "README.md"

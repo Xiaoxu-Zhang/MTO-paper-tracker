@@ -45,7 +45,7 @@ class PaperWatcher:
                 import os
                 env_file = os.getenv("GITHUB_ENV")
                 with open(env_file, "a") as f:
-                    f.write(f"MSG=$'{msg}'")
+                    f.write(f"MSG=\"{msg}\"")
 
     def generate_message(self):
         table_lines=[]

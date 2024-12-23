@@ -81,6 +81,8 @@ def request_serp_data(params, prev_total):
         curr_total = results.get("search_information", {}).get("total_results", 0)
         if curr_total > prev_total:
             return results, curr_total
+        else:
+            return None, None
     else:
         logger.error(f"SerpAPI request Status was {status}")
         return None, None

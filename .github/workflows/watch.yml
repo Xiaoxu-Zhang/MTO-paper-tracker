@@ -17,49 +17,23 @@ jobs:
       RUN_ENV: "prod" # within ['prod', 'dev']
       SERP_API_KEY: ${{ secrets.SERP_API_KEY }}
     steps:
-      # ============================================
-      # TODO [√] 检查工作分支及 Workflows 运行环境
-      # ============================================
       - name: Checkout
         uses: actions/checkout@v3
-      # ============================================
-      # TODO [√] 创建 Python3.6+ 编译环境
-      # ============================================
+
       - name: Set up Python 3.9
         uses: actions/setup-python@v3
         with:
           python-version: 3.9
-      # ============================================
-      # TODO [√] 安装 Project 第三方依赖
-      # ============================================
+
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      # ============================================
-      # TODO [√] 测试 Scaffold 脚手架指令
-      # ============================================
+
       - name: Run watcher
         run: |
           python setup.py --mode=${{ env.RUN_ENV }} run
 
-      - name: Setup var
-        id: vars
-        run: |
-          content=${{ env.MSG }}
-          if [ -z "$content" ]; then
-            echo "MSG is empty"
-            echo "::set-output name=content::"
-          else
-            content="${content//'%'/'%25'}"
-            content="${content//$'\n'/'%0A'}"
-            content="${content//$'\r'/'%0D'}"
-            echo "content=$content" >> $GITHUB_STATE
-            echo "::set-output name=content::$content"
-          fi
-      # ============================================
-      # TODO [√] 更新仓库数据
-      # ============================================
       - name: Setup GIT user
         uses: fregante/setup-git-user@v1
 
@@ -69,10 +43,9 @@ jobs:
           git push --force origin main
 
       - name: Create an issue for new papers
-        if: ${{ steps.vars.outputs.content != '' }}
+        if: ${{ env.MSG != '' }}
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MSG: ${{ steps.vars.outputs.content }}
         with:
           filename: .github/issue-template.md

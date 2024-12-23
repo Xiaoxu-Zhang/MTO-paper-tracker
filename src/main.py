@@ -32,8 +32,8 @@ class PaperWatcher:
 
     @staticmethod
     def preview_message(msg):
-        with open("preview", "w") as f:
-            f.write(f"MSG=${msg}")
+        with open("mail.md", "w") as f:
+            f.write(msg)
 
     def run(self):
         msg = self.update_cached_data()
@@ -45,7 +45,7 @@ class PaperWatcher:
                 import os
                 env_file = os.getenv("GITHUB_ENV")
                 with open(env_file, "a") as f:
-                    f.write(f"MSG=\"{msg}\"\n")
+                    f.write(f"MSG<<EOF\n{msg}\nEOF")
 
     def generate_message(self):
         table_lines=[]
@@ -53,7 +53,7 @@ class PaperWatcher:
             items = self.new_data[topic]
             total = len(items)
             if total > 0:
-                table_lines.append(f"## Explore {total} new papers about {topic}\\n")
+                table_lines.append(f"## Explore {total} new papers about {topic}\n")
                 table_lines.append("| Index | Year | Title | Venue |")
                 table_lines.append("|-------|------|-------|-------|")
                 # Github issue allow max 65535 characters, so we show the first 10 items for one topic
@@ -62,7 +62,7 @@ class PaperWatcher:
                     table_lines.append(f"| [{idx}]({item['url']}) | {item['year']} | {item['title']} | {item['venue']}")
                 if total > items_showing:
                     table_lines.append(f"| ... | ... | ... | ... |")
-        msg = "\\n".join(table_lines)
+        msg = "\n".join(table_lines)
         return msg
 
 

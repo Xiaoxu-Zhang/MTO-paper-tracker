@@ -217,6 +217,129 @@ many-task%20optimization:
   doi: 10.1109/TEVC.2022.3210783
   ee: https://doi.org/10.1109/TEVC.2022.3210783
   url: https://dblp.org/rec/journals/tec/JiangZTZ23
+- author: Jiangjiang Zhang, Bei Gong, Muhammad Waqas 0001, Shanshan Tu, Zhu Han 0001
+  title: A Hybrid Many-Objective Optimization Algorithm for Task Offloading and Resource
+    Allocation in Multi-Server Mobile Edge Computing Networks.
+  venue: IEEE Trans. Serv. Comput.
+  year: '2023'
+  type: Journal Articles
+  access: closed
+  key: journals/tsc/ZhangGWTH23
+  doi: 10.1109/TSC.2023.3268990
+  ee: https://doi.org/10.1109/TSC.2023.3268990
+  url: https://dblp.org/rec/journals/tsc/ZhangGWTH23
+- author: Sheng-Hao Wu, Jian-Yu Li, Zhi-Hui Zhan, Jun Zhang 0003
+  title: Multi-View Transfer with Marginal and Conditional Alignment for Many-Task
+    Optimization.
+  venue: CEC
+  year: '2023'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/cec/WuLZZ23
+  doi: 10.1109/CEC53210.2023.10254183
+  ee: https://doi.org/10.1109/CEC53210.2023.10254183
+  url: https://dblp.org/rec/conf/cec/WuLZZ23
+- author: Yang-Tao Dai, Xiao-Fang Liu, Zhi-Hui Zhan, Jinghui Zhong, Jun Zhang 0003
+  title: Adaptive Geodesic Flow Kernel Transfer for Many-Task Optimization.
+  venue: SSCI
+  year: '2023'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/ssci/DaiLZZZ23
+  doi: 10.1109/SSCI52147.2023.10371999
+  ee: https://doi.org/10.1109/SSCI52147.2023.10371999
+  url: https://dblp.org/rec/conf/ssci/DaiLZZZ23
+- author: "Behnaz Pourmohseni, Stefan Wildermann, Fedor Smirnov, Paul E. Meyer, J\xFC\
+    rgen Teich"
+  title: Task Migration Policy for Thermal-Aware Dynamic Performance Optimization
+    in Many-Core Systems.
+  venue: IEEE Access
+  year: '2022'
+  type: Journal Articles
+  access: open
+  key: journals/access/PourmohseniWSMT22
+  doi: 10.1109/ACCESS.2022.3162617
+  ee: https://doi.org/10.1109/ACCESS.2022.3162617
+  url: https://dblp.org/rec/journals/access/PourmohseniWSMT22
+- author: Shengyan Wen, Xiaohang Wang 0001, Amit Kumar Singh 0002, Yingtao Jiang,
+    Mei Yang
+  title: Performance Optimization of Many-Core Systems by Exploiting Task Migration
+    and Dark Core Allocation.
+  venue: IEEE Trans. Computers
+  year: '2022'
+  type: Journal Articles
+  access: closed
+  key: journals/tc/WenWSJY22
+  doi: 10.1109/TC.2020.3042663
+  ee: https://doi.org/10.1109/TC.2020.3042663
+  url: https://dblp.org/rec/journals/tc/WenWSJY22
+- author: Zhengping Liang, Xiuju Xu, Ling Liu 0003, Yaofeng Tu, Zexuan Zhu
+  title: Evolutionary Many-Task Optimization Based on Multisource Knowledge Transfer.
+  venue: IEEE Trans. Evol. Comput.
+  year: '2022'
+  type: Journal Articles
+  access: closed
+  key: journals/tec/LiangXLTZ22
+  doi: 10.1109/TEVC.2021.3101697
+  ee: https://doi.org/10.1109/TEVC.2021.3101697
+  url: https://dblp.org/rec/journals/tec/LiangXLTZ22
+- author: Hanjing Cheng, Zidong Wang, Lifeng Ma, Xiaohui Liu 0001, Zhihui Wei
+  title: 'Multi-task Pruning via Filter Index Sharing: A Many-Objective Optimization
+    Approach.'
+  venue: Cogn. Comput.
+  year: '2021'
+  type: Journal Articles
+  access: closed
+  key: journals/cogcom/ChengWMLW21
+  doi: 10.1007/S12559-021-09894-X
+  ee: https://doi.org/10.1007/s12559-021-09894-x
+  url: https://dblp.org/rec/journals/cogcom/ChengWMLW21
+- author: Ta Bao Thang, Tran Cong Dao, Nguyen Hoang Long, Huynh Thi Thanh Binh
+  title: Parameter adaptation in multifactorial evolutionary algorithm for many-task
+    optimization.
+  venue: Memetic Comput.
+  year: '2021'
+  type: Journal Articles
+  access: closed
+  key: journals/memetic/ThangDLB21
+  doi: 10.1007/S12293-021-00347-4
+  ee: https://doi.org/10.1007/s12293-021-00347-4
+  url: https://dblp.org/rec/journals/memetic/ThangDLB21
+- author: Fei Xue, Tingting Dong, Siqing You, Yan Liu, Hengliang Tang, Lei Chen, Xi
+    Yang, Juntao Li
+  title: A hybrid many-objective competitive swarm optimization algorithm for large-scale
+    multirobot task allocation problem.
+  venue: Int. J. Mach. Learn. Cybern.
+  year: '2021'
+  type: Journal Articles
+  access: closed
+  key: journals/mlc/XueDYLTCYL21
+  doi: 10.1007/S13042-020-01213-4
+  ee: https://doi.org/10.1007/s13042-020-01213-4
+  url: https://dblp.org/rec/journals/mlc/XueDYLTCYL21
+- author: Mincan Li, Zidong Wang, Kenli Li 0001, Xiangke Liao, Kate Hone, Xiaohui
+    Liu 0001
+  title: 'Task Allocation on Layered Multiagent Systems: When Evolutionary Many-Objective
+    Optimization Meets Deep Q-Learning.'
+  venue: IEEE Trans. Evol. Comput.
+  year: '2021'
+  type: Journal Articles
+  access: closed
+  key: journals/tec/LiWLLHL21
+  doi: 10.1109/TEVC.2021.3049131
+  ee: https://doi.org/10.1109/TEVC.2021.3049131
+  url: https://dblp.org/rec/journals/tec/LiWLLHL21
+- author: Baihao Chen, Huimei Tang, Qiuzhen Lin
+  title: An Adaptive Asynchronous Transfer Evolutionary Framework Towards Many-Task
+    Optimization.
+  venue: CCIS
+  year: '2021'
+  type: Conference and Workshop Papers
+  access: closed
+  key: conf/ccis/ChenTL21
+  doi: 10.1109/CCIS53392.2021.9754633
+  ee: https://doi.org/10.1109/CCIS53392.2021.9754633
+  url: https://dblp.org/rec/conf/ccis/ChenTL21
 manytask%20optimization:
 - author: Rung-Tzuo Liaw, Chuan-Kang Ting
   title: Evolutionary Manytasking Optimization Based on Symbiosis in Biocoenosis.
@@ -6635,6 +6758,39 @@ multi-task%20optimization:
   doi: 10.1109/ICASSP.1994.389456
   ee: https://doi.org/10.1109/ICASSP.1994.389456
   url: https://dblp.org/rec/conf/icassp/LafertePH94
+- author: Zhiwei Xu 0004, Jiafeng Xu, Kai Zhang 0002, Xin Xu 0007, Juanjuan He, Ni
+    Wu
+  title: Decision variable classification based multi-objective multifactorial memetic
+    algorithm for multi-objective multi-task optimization problem.
+  venue: Appl. Soft Comput.
+  year: '2024'
+  type: Journal Articles
+  access: closed
+  key: journals/asc/XuXZXHW24
+  doi: 10.1016/J.ASOC.2024.111232
+  ee: https://doi.org/10.1016/j.asoc.2024.111232
+  url: https://dblp.org/rec/journals/asc/XuXZXHW24
+- author: Kun Li, Xinxin Yan, Ying Han
+  title: Multi-mechanism swarm optimization for multi-UAV task assignment and path
+    planning in transmission line inspection under multi-wind field.
+  venue: Appl. Soft Comput.
+  year: '2024'
+  type: Journal Articles
+  access: closed
+  key: journals/asc/LiYH24
+  doi: 10.1016/J.ASOC.2023.111033
+  ee: https://doi.org/10.1016/j.asoc.2023.111033
+  url: https://dblp.org/rec/journals/asc/LiYH24
+- author: Lu Bai 0005, Abhishek Gupta 0001, Yew-Soon Ong
+  title: Multi-Task Learning with Multi-Task Optimization.
+  venue: CoRR
+  year: '2024'
+  type: Informal and Other Publications
+  access: open
+  key: journals/corr/abs-2403-16162
+  doi: 10.48550/ARXIV.2403.16162
+  ee: https://doi.org/10.48550/arXiv.2403.16162
+  url: https://dblp.org/rec/journals/corr/abs-2403-16162
 multitasking%20optimization:
 - author: Yanchi Li, Wenyin Gong, Shuijia Li
   title: Multitasking optimization via an adaptive solver multitasking evolutionary

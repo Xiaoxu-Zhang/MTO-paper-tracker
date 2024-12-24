@@ -53,7 +53,11 @@ def request_serp(params, depth=-1):
     while params is not None:
         if curr_depth <= 0:
             break
-        data, curr_total = request_serp_data(params, prev_total)
+        res = request_serp_data(params, prev_total)
+        if res:
+            data, curr_total = res
+        else:
+            data = None
         if data is not None:
             all_items += refine_serp_items(data)
             serpapi_pagination = data.get("serpapi_pagination", {})
@@ -74,7 +78,10 @@ def request_serp_data(params, prev_total):
         results = search.get_json()
     except Exception as e:
         logger.error(f"Request SerpAPI failed with exception: {e}")
-        return None, None
+        return
+    if len(results) == 1 and "error" in results:
+        logger.error(f"SerpApi:{results['error']}")
+        return
 
     status = results.get("search_metadata", {}).get("status", {})
     if status == "Success":
@@ -82,10 +89,9 @@ def request_serp_data(params, prev_total):
         if curr_total > prev_total:
             return results, curr_total
         else:
-            return None, None
+            logger.info(f"Current total({curr_total}) is no more than previous({prev_total})")
     else:
-        logger.error(f"SerpAPI request Status was {status}")
-        return None, None
+        logger.error(f"SerpAPI request was not success, result was {results}")
 
 
 def init_serp_params(target_url):

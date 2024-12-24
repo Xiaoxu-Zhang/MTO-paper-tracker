@@ -62,6 +62,8 @@ class PaperWatcher:
                     markdown_lines.append(f"{idx+1}. [[{item['year']}]({item[link_key]})] {item['title']} --on-- {item['venue']}")
                 if total > items_showing:
                     markdown_lines.append(f"...")
+                if self.channel == "serp":
+                    markdown_lines.append("\n See original [web page](https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=allintitle%3A+optimization+%22many-task%22+OR+%22multitask%22+OR+%22multitasking%22+OR+%22multi-task%22+-learning&btnG=) for more info")
         msg = "\n".join(markdown_lines)
         return msg
 

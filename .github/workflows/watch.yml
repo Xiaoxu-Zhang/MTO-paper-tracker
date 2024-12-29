@@ -3,7 +3,7 @@ name: Run Watcher
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "0 1 * * *"
   push:
     branches: [main]
 

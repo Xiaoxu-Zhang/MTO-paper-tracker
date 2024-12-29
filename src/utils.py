@@ -45,16 +45,19 @@ def update_total(total):
     except Exception as e:
         logger.error(f"Failed to save total.yaml, {e}")
 
-def request_serp(params, depth=-1):
+def request_serp(params, depth=-1, api_key_name="SERP_API_KEY"):
     all_items = []
     curr_depth = depth
     prev_total = load_previous_total()
     curr_total = None
     while params is not None:
         if curr_depth <= 0:
+            logger.info(f"Reached max depth.")
             break
         res = request_serp_data(params, prev_total)
-        if res:
+        if "error" in res:
+            return ["error"]
+        elif res:
             data, curr_total = res
         else:
             data = None
@@ -62,10 +65,10 @@ def request_serp(params, depth=-1):
             all_items += refine_serp_items(data)
             serpapi_pagination = data.get("serpapi_pagination", {})
             next_url = serpapi_pagination.get("next", None)
-            params = init_serp_params(next_url)
+            params = init_serp_params(next_url, api_key_name)
             curr_depth -= 1
         else:
-            logger.error(f"serp data is None")
+            logger.info(f"serp data is None")
             params = None
     if curr_total:
         update_total(curr_total)
@@ -81,7 +84,7 @@ def request_serp_data(params, prev_total):
         return
     if len(results) == 1 and "error" in results:
         logger.error(f"SerpApi:{results['error']}")
-        return
+        return results
 
     status = results.get("search_metadata", {}).get("status", {})
     if status == "Success":
@@ -94,13 +97,13 @@ def request_serp_data(params, prev_total):
         logger.error(f"SerpAPI request was not success, result was {results}")
 
 
-def init_serp_params(target_url):
+def init_serp_params(target_url, api_key_name):
     if target_url is None:
         return
     from urllib.parse import urlparse, parse_qs
-    api_key = os.getenv("SERP_API_KEY")
+    api_key = os.getenv(api_key_name)
     if not api_key:
-        print("SerpAPI API Key not found in environment variables.")
+        logger.error("SerpAPI API Key not found in environment variables.")
         return
     if "https" in target_url:
         parsed_url = urlparse(target_url)
@@ -162,11 +165,16 @@ def refine_serp_items(json_data=None):
 
 
 def load_config(cfg_path: str):
-    cfg = ez.Config().load(cfg_path)
-    cfg["cache_path"] = Path(cfg["cache_path"])
-    cfg["cache_path"].mkdir(parents=True, exist_ok=True)
+    cfg = yaml.safe_load(open(cfg_path, "r"))
+    path = Path(cfg["cache_path"])
+    path.mkdir(parents=True, exist_ok=True)
     init_log()
     return cfg
+
+def save_config(file_path: str, cfg_data:dict):
+    _path = Path(file_path)
+    with _path.open('w') as f:
+        yaml.safe_dump(cfg_data, f, sort_keys=False, indent=2)
 
 
 def get_item_info(item, key):

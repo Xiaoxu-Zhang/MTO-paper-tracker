@@ -16,6 +16,7 @@ jobs:
       TZ: "Asia/Shanghai"
       RUN_ENV: "prod" # within ['prod', 'dev']
       SERP_API_KEY: ${{ secrets.SERP_API_KEY }}
+      SERP_API_KEY_ZYY: ${{ secrets.SERP_API_KEY_ZYY }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3

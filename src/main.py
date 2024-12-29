@@ -1,13 +1,14 @@
 from pathlib import Path
 from loguru import logger
 from src.utils import request_serp
-from utils import load_config, get_dblp_items, request_dblp, init_serp_params
+from utils import load_config, save_config, get_dblp_items, request_dblp, init_serp_params
 import yaml
 
 
 class PaperWatcher:
     def __init__(self, mode='dev', config_path="config.yaml"):
         self.config = load_config(config_path)
+        self.config_path = config_path
         self.mode = mode
         self.readme_path = self.config["readme_path"]
         self.channel = self.config["channel"]
@@ -59,7 +60,12 @@ class PaperWatcher:
                 items_showing = min(10, total)
                 for idx, item in enumerate(items[:items_showing]):
                     link_key = 'url' if self.channel == 'serp' else 'ee'
-                    markdown_lines.append(f"{idx+1}. [[{item['year']}]({item[link_key]})] {item['title']} --on-- {item['venue']}")
+                    _index = idx+1
+                    year = item['year']
+                    link = item[link_key]
+                    title = item['title']
+                    venue = item['venue']
+                    markdown_lines.append(f"{_index}. [[{year}]({link})] {title} --on-- {venue}")
                 if total > items_showing:
                     markdown_lines.append(f"...")
                 if self.channel == "serp":
@@ -71,17 +77,34 @@ class PaperWatcher:
     def update_cached_data(self):
         topics = self.config[self.channel]["topics"]
         logger.info(f"topics: {topics}")
-        for topic in topics:
+        total_topic = len(topics)
+        topic_id = 0
+        total_try = 1
+        while topic_id < total_topic:
+            topic = topics[topic_id]
             if self.channel == "dblp":
                 received_data = request_dblp(topic)
                 if received_data is None:
                     logger.error(f"dblp data is None, topic: {topic}")
+                    topic_id += 1
                     continue
                 items = get_dblp_items(received_data)
             else:
-                params = init_serp_params(topic)
-                items = request_serp(params=params, depth=self.query_depth)
-
+                api_key_total = self.config[self.channel]["api_key_total"]
+                api_key_current_id = self.config[self.channel]["api_key_current_id"]
+                api_key_name = self.config[self.channel]["api_key_names"][api_key_current_id]
+                logger.info(f"api_key_name: {api_key_name}")
+                params = init_serp_params(topic, api_key_name)
+                items = request_serp(params=params, depth=self.query_depth, api_key_name=api_key_name)
+                if items == ["error"]:
+                    api_key_current_id = (api_key_current_id + 1) % api_key_total
+                    self.config[self.channel]["api_key_current_id"] = api_key_current_id
+                    total_try += 1
+                    if total_try > api_key_total:
+                        logger.error(f"All api keys are used up, please add more api keys")
+                        break
+                    continue
+            topic_id += 1
             topic_cached_items = self.cached_data.get(topic, [])
             topic_new_items = [item for item in items if item not in topic_cached_items]
             logger.info(f"total {len(topic_new_items)} new items about topic {topic}")
@@ -94,8 +117,8 @@ class PaperWatcher:
                 self.new_data[topic] = topic_new_items
 
         msg = self.generate_message()
-        msg.replace("'", "")
         yaml.safe_dump(self.cached_data, open(self.cache_path, "w"), sort_keys=False, indent=2)
+        yaml.safe_dump(self.config, open(self.config_path, "w"), sort_keys=False, indent=2)
 
         return msg
 

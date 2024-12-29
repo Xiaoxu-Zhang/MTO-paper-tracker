@@ -1,21 +1,19 @@
 dblp:
   url: https://dblp.org/search/publ/api?q={}&format=json&h=1000
   topics:
-    - "many-task%20optimization"
-    - "manytask%20optimization"
-    - "multi-task%20optimization"
-    - "multitasking%20optimization"
-
+  - many-task%20optimization
+  - manytask%20optimization
+  - multi-task%20optimization
+  - multitasking%20optimization
 serp:
-    topics:
-        - "allintitle: optimization \"many-task\" OR \"multitask\" OR \"multitasking\" OR \"multi-task\" -learning"
-    query_depth: 3
-    api_key_total: 2
-    api_key_current_id: 0
-    api_key_names:
-        - "SERP_API_KEY"
-        - "SERP_API_KEY_ZYY"
-
-channel: "serp"
-cache_path: "cached"
-readme_path: "README.md"
+  topics:
+  - 'allintitle: optimization "many-task" OR "multitask" OR "multitasking" OR "multi-task" -learning'
+  query_depth: 10
+  api_key_total: 2
+  api_key_current_id: 1
+  api_key_names:
+  - SERP_API_KEY
+  - SERP_API_KEY_ZYY
+channel: serp
+cache_path: cached
+readme_path: README.md

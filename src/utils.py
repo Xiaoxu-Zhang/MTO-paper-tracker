@@ -55,12 +55,12 @@ def request_serp(params, depth=-1, api_key_name="SERP_API_KEY"):
             logger.info(f"Reached max depth.")
             break
         res = request_serp_data(params, prev_total)
-        if "error" in res:
-            return ["error"]
-        elif res:
-            data, curr_total = res
-        else:
+        if res is None:
             data = None
+        elif "error" in res:
+            return ["error"]
+        else:
+            data, curr_total = res
         if data is not None:
             all_items += refine_serp_items(data)
             serpapi_pagination = data.get("serpapi_pagination", {})

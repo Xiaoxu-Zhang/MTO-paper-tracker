@@ -7,7 +7,8 @@ dblp:
   - multitasking%20optimization
 serp:
   topics:
-  - 'allintitle: optimization "many-task" OR "multitask" OR "multitasking" OR "multi-task" -learning'
+  - 'allintitle: optimization "many-task" OR "multitask" OR "multitasking" OR "multi-task"
+    -learning'
   query_depth: 10
   api_key_total: 2
   api_key_current_id: 1

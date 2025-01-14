@@ -1278,3 +1278,164 @@
   cited_by: 15
   venue: Expert Systems with Applications
   year: '2023'
+- title: Multiobjective multifactorial optimization in evolutionary multitasking
+  authors: "A Gupta, YS Ong, L Feng\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/7464295/
+  cited_by: 390
+  venue: "IEEE transactions on \u2026"
+  year: '2016'
+- title: Self-regulated evolutionary multitask optimization
+  authors: "X Zheng, AK Qin, M Gong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/8666053/
+  cited_by: 178
+  venue: "IEEE Transactions on \u2026"
+  year: '2019'
+- title: Generalized multitasking for evolutionary optimization of expensive problems
+  authors: J Ding, C Yang, Y Jin, T Chai
+  url: https://ieeexplore.ieee.org/abstract/document/8231172/
+  cited_by: 251
+  venue: "IEEE Transactions on \u2026"
+  year: '2017'
+- title: Multitasking optimization via an adaptive solver multitasking evolutionary
+    framework
+  authors: Y Li, W Gong, S Li
+  url: https://www.sciencedirect.com/science/article/pii/S0020025522012191
+  cited_by: 38
+  venue: Information Sciences
+  year: '2023'
+- title: An evolutionary multitasking optimization framework for constrained multiobjective
+    optimization problems
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9690609/
+  cited_by: 151
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Constrained multiobjective optimization via multitasking and knowledge transfer
+  authors: F Ming, W Gong, L Wang, L Gao
+  url: https://ieeexplore.ieee.org/abstract/document/9993796/
+  cited_by: 49
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Multipopulation optimization for multitask optimization
+  authors: "Z Tang, M Gong, F Jiang, H Li\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/8790234/
+  cited_by: 27
+  venue: "2019 IEEE Congress on \u2026"
+  year: '2019'
+- title: 'Evolutionary multitask optimization: Fundamental research questions, practices,
+    and directions for the future'
+  authors: E Osaba, J Del Ser, PN Suganthan
+  url: https://www.sciencedirect.com/science/article/pii/S2210650222001699
+  cited_by: 16
+  venue: Swarm and Evolutionary Computation
+  year: '2022'
+- title: Neural network-based knowledge transfer for multitask optimization
+  authors: "ZF Xue, ZJ Wang, ZH Zhan, S Kwong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10711878/
+  cited_by: 5
+  venue: "IEEE Transactions on \u2026"
+  year: '2024'
+- title: 'Evolutionary multitask optimization in real-world applications: A survey'
+  authors: "Y Wu, H Ding, B Xiang, J Sheng, W Ma\u2026"
+  url: https://ojs.istp-press.com/jait/article/view/149
+  cited_by: 20
+  venue: "Journal of Artificial \u2026"
+  year: '2023'
+- title: 'Evolutionary multitasking for single-objective continuous optimization:
+    Benchmark problems, performance metric, and baseline results'
+  authors: "B Da, YS Ong, L Feng, AK Qin, A Gupta, Z Zhu\u2026"
+  url: https://arxiv.org/abs/1706.03470
+  cited_by: 233
+  venue: "arXiv preprint arXiv \u2026"
+  year: '2017'
+- title: Multi-task bayesian optimization
+  authors: K Swersky, J Snoek, RP Adams
+  url: https://proceedings.neurips.cc/paper/2013/hash/f33ba15effa5c10e873bf3842afb46a6-Abstract.html
+  cited_by: 961
+  venue: "Advances in neural \u2026"
+  year: '2013'
+- title: A meta-knowledge transfer-based differential evolution for multitask optimization
+  authors: JY Li, ZH Zhan, KC Tan, J Zhang
+  url: https://ieeexplore.ieee.org/abstract/document/9627943/
+  cited_by: 127
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: Block-level knowledge transfer for evolutionary multitask optimization
+  authors: "Y Jiang, ZH Zhan, KC Tan\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10130298/
+  cited_by: 42
+  venue: "IEEE Transactions on \u2026"
+  year: '2023'
+- title: Dynamic auxiliary task-based evolutionary multitasking for constrained multiobjective
+    optimization
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9774845/
+  cited_by: 108
+  venue: "IEEE Transactions \u2026"
+  year: '2022'
+- title: Multiobjective multitasking optimization with subspace distribution alignment
+    and decision variable transfer
+  authors: "W Gao, J Cheng, M Gong, H Li\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9582815/
+  cited_by: 36
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: 'Explicit evolutionary multitasking for combinatorial optimization: A case
+    study on capacitated vehicle routing problem'
+  authors: "L Feng, Y Huang, L Zhou, J Zhong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9023952/
+  cited_by: 168
+  venue: "IEEE transactions on \u2026"
+  year: '2020'
+- title: An adaptive archive-based evolutionary framework for many-task optimization
+  authors: "Y Chen, J Zhong, L Feng\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/8727933/
+  cited_by: 158
+  venue: "IEEE Transactions on \u2026"
+  year: '2019'
+- title: Improved Evolutionary Multitasking Optimization Algorithm With Similarity
+    Evaluation of Search Behavior
+  authors: "X Wu, W Wang, T Zhang, H Han\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10459256/
+  cited_by: 4
+  venue: "IEEE Transactions on \u2026"
+  year: '2024'
+- title: 'Mumbo: Multi-task max-value bayesian optimization'
+  authors: HB Moss, DS Leslie, P Rayson
+  url: https://link.springer.com/chapter/10.1007/978-3-030-67664-3_27
+  cited_by: 48
+  venue: '-'
+  year: '-'
+- title: Evolutionary multitasking descriptor optimization for point cloud registration
+  authors: "Y Wu, J Sheng, H Ding, P Gong, H Li\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10566881/
+  cited_by: 10
+  venue: "IEEE Transactions \u2026"
+  year: '2024'
+- title: A novel multitasking ant colony optimization method for detecting multiorder
+    SNP interactions
+  authors: "S Tuo, C Li, F Liu, YL Zhu, TR Chen, ZY Feng\u2026"
+  url: https://link.springer.com/article/10.1007/s12539-022-00530-2
+  cited_by: 16
+  venue: "Interdisciplinary \u2026"
+  year: '2022'
+- title: Adaptive Bi-Operator Evolution for Multitasking Optimization Problems
+  authors: C Wang, Z Wang, Z Kou
+  url: https://www.mdpi.com/2313-7673/9/10/604
+  cited_by: 1
+  venue: Biomimetics
+  year: '2024'
+- title: Multiobjective multifactorial immune algorithm for multiobjective multitask
+    optimization problems
+  authors: Z Xu, K Zhang
+  url: https://www.sciencedirect.com/science/article/pii/S1568494621003227
+  cited_by: 29
+  venue: Applied Soft Computing
+  year: '2021'
+- title: A Kalman filter-based prediction strategy for multiobjective multitasking
+    optimization
+  authors: Q Dang, J Yuan
+  url: https://www.sciencedirect.com/science/article/pii/S0957417422020437
+  cited_by: 11
+  venue: Expert Systems with Applications
+  year: '2023'

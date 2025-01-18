@@ -1439,3 +1439,56 @@
   cited_by: 11
   venue: Expert Systems with Applications
   year: '2023'
+- title: An evolutionary multitasking optimization framework for constrained multiobjective
+    optimization problems
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9690609/
+  cited_by: 152
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Multisurrogate-assisted multitasking particle swarm optimization for expensive
+    multimodal problems
+  authors: "X Ji, Y Zhang, D Gong, X Sun\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9615147/
+  cited_by: 56
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: Neural network-based knowledge transfer for multitask optimization
+  authors: "ZF Xue, ZJ Wang, ZH Zhan, S Kwong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10711878/
+  cited_by: 6
+  venue: "IEEE Transactions on \u2026"
+  year: '2024'
+- title: 'Evolutionary multitask optimization in real-world applications: A survey'
+  authors: "Y Wu, H Ding, B Xiang, J Sheng, W Ma\u2026"
+  url: https://ojs.istp-press.com/jait/article/view/149
+  cited_by: 21
+  venue: "Journal of Artificial \u2026"
+  year: '2023'
+- title: Evolutionary multitasking for feature selection in high-dimensional classification
+    via particle swarm optimization
+  authors: K Chen, B Xue, M Zhang, F Zhou
+  url: https://ieeexplore.ieee.org/abstract/document/9496593/
+  cited_by: 131
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: 'Evolutionary multitasking for single-objective continuous optimization:
+    Benchmark problems, performance metric, and baseline results'
+  authors: "B Da, YS Ong, L Feng, AK Qin, A Gupta, Z Zhu\u2026"
+  url: https://arxiv.org/abs/1706.03470
+  cited_by: 234
+  venue: "arXiv preprint arXiv \u2026"
+  year: '2017'
+- title: Multi-task bayesian optimization
+  authors: K Swersky, J Snoek, RP Adams
+  url: https://proceedings.neurips.cc/paper/2013/hash/f33ba15effa5c10e873bf3842afb46a6-Abstract.html
+  cited_by: 962
+  venue: "Advances in neural \u2026"
+  year: '2013'
+- title: Dynamic auxiliary task-based evolutionary multitasking for constrained multiobjective
+    optimization
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9774845/
+  cited_by: 109
+  venue: "IEEE Transactions \u2026"
+  year: '2022'

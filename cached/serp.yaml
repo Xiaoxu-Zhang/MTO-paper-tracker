@@ -1790,3 +1790,98 @@
   cited_by: 1
   venue: "IEEE Transactions on Services \u2026"
   year: '2024'
+- title: 'Evolutionary multitask optimization: a methodological overview, challenges,
+    and future research directions'
+  authors: E Osaba, J Del Ser, AD Martinez, A Hussain
+  url: https://link.springer.com/article/10.1007/s12559-022-10012-8
+  cited_by: 79
+  venue: Cognitive Computation
+  year: '2022'
+- title: Self-regulated evolutionary multitask optimization
+  authors: "X Zheng, AK Qin, M Gong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/8666053/
+  cited_by: 181
+  venue: "IEEE Transactions on \u2026"
+  year: '2019'
+- title: Generalized multitasking for evolutionary optimization of expensive problems
+  authors: J Ding, C Yang, Y Jin, T Chai
+  url: https://ieeexplore.ieee.org/abstract/document/8231172/
+  cited_by: 254
+  venue: "IEEE Transactions on \u2026"
+  year: '2017'
+- title: Multitasking optimization via an adaptive solver multitasking evolutionary
+    framework
+  authors: Y Li, W Gong, S Li
+  url: https://www.sciencedirect.com/science/article/pii/S0020025522012191
+  cited_by: 39
+  venue: Information Sciences
+  year: '2023'
+- title: Evolutionary multitask optimization with adaptive knowledge transfer
+  authors: H Xu, AK Qin, S Xia
+  url: https://ieeexplore.ieee.org/abstract/document/9521551/
+  cited_by: 61
+  venue: "IEEE Transactions on Evolutionary \u2026"
+  year: '2021'
+- title: Multisurrogate-assisted multitasking particle swarm optimization for expensive
+    multimodal problems
+  authors: "X Ji, Y Zhang, D Gong, X Sun\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9615147/
+  cited_by: 58
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: 'MToP: A MATLAB optimization platform for evolutionary multitasking'
+  authors: Y Li, W Gong, F Ming, T Zhang, S Li, Q Gu
+  url: https://arxiv.org/abs/2312.08134
+  cited_by: 14
+  venue: "arXiv preprint arXiv \u2026"
+  year: '2023'
+- title: Multitasking multiobjective optimization based on transfer component analysis
+  authors: Z Hu, Y Li, H Sun, X Ma
+  url: https://www.sciencedirect.com/science/article/pii/S0020025522004571
+  cited_by: 17
+  venue: Information Sciences
+  year: '2022'
+- title: 'Evolutionary multitasking for single-objective continuous optimization:
+    Benchmark problems, performance metric, and baseline results'
+  authors: "B Da, YS Ong, L Feng, AK Qin, A Gupta, Z Zhu\u2026"
+  url: https://arxiv.org/abs/1706.03470
+  cited_by: 236
+  venue: "arXiv preprint arXiv \u2026"
+  year: '2017'
+- title: A meta-knowledge transfer-based differential evolution for multitask optimization
+  authors: JY Li, ZH Zhan, KC Tan, J Zhang
+  url: https://ieeexplore.ieee.org/abstract/document/9627943/
+  cited_by: 129
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: Block-level knowledge transfer for evolutionary multitask optimization
+  authors: "Y Jiang, ZH Zhan, KC Tan\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10130298/
+  cited_by: 43
+  venue: "IEEE Transactions on \u2026"
+  year: '2023'
+- title: Solving multitask optimization problems with adaptive knowledge transfer
+    via anomaly detection
+  authors: C Wang, J Liu, K Wu, Z Wu
+  url: https://ieeexplore.ieee.org/abstract/document/9385398/
+  cited_by: 99
+  venue: "IEEE Transactions on Evolutionary \u2026"
+  year: '2021'
+- title: Evolutionary many-task optimization based on multisource knowledge transfer
+  authors: Z Liang, X Xu, L Liu, Y Tu, Z Zhu
+  url: https://ieeexplore.ieee.org/abstract/document/9502920/
+  cited_by: 76
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: An adaptive archive-based evolutionary framework for many-task optimization
+  authors: "Y Chen, J Zhong, L Feng\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/8727933/
+  cited_by: 159
+  venue: "IEEE Transactions on \u2026"
+  year: '2019'
+- title: A multitask optimization algorithm based on elite individual transfer
+  authors: Y Lai, H Chen, F Gu
+  url: https://www.aimspress.com/aimspress-data/mbe/2023/5/PDF/mbe-20-05-360.pdf
+  cited_by: 3
+  venue: Math. Biosci. Eng
+  year: '2023'

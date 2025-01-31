@@ -1885,3 +1885,57 @@
   cited_by: 3
   venue: Math. Biosci. Eng
   year: '2023'
+- title: 'Evolutionary multitask optimization: a methodological overview, challenges,
+    and future research directions'
+  authors: E Osaba, J Del Ser, AD Martinez, A Hussain
+  url: https://link.springer.com/article/10.1007/s12559-022-10012-8
+  cited_by: 80
+  venue: Cognitive Computation
+  year: '2022'
+- title: An evolutionary multitasking optimization framework for constrained multiobjective
+    optimization problems
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9690609/
+  cited_by: 155
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Domain adaptation multitask optimization
+  authors: "X Wang, Q Kang, MC Zhou, S Yao\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9965583/
+  cited_by: 30
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: 'Evolutionary multitasking in permutation-based combinatorial optimization
+    problems: Realization with TSP, QAP, LOP, and JSP'
+  authors: "Y Yuan, YS Ong, A Gupta, PS Tan\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/7848632/
+  cited_by: 147
+  venue: "2016 IEEE Region 10 \u2026"
+  year: '2016'
+- title: 'Explicit evolutionary multitasking for combinatorial optimization: A case
+    study on capacitated vehicle routing problem'
+  authors: "L Feng, Y Huang, L Zhou, J Zhong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9023952/
+  cited_by: 171
+  venue: "IEEE transactions on \u2026"
+  year: '2020'
+- title: Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution
+    Selection Strategy
+  authors: "Z Wang, L Cao, L Feng, M Jiang\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10379504/
+  cited_by: 22
+  venue: "IEEE Transactions on \u2026"
+  year: '2024'
+- title: Evolutionary multitasking descriptor optimization for point cloud registration
+  authors: "Y Wu, J Sheng, H Ding, P Gong, H Li\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10566881/
+  cited_by: 11
+  venue: "IEEE Transactions \u2026"
+  year: '2024'
+- title: A Kalman filter-based prediction strategy for multiobjective multitasking
+    optimization
+  authors: Q Dang, J Yuan
+  url: https://www.sciencedirect.com/science/article/pii/S0957417422020437
+  cited_by: 12
+  venue: Expert Systems with Applications
+  year: '2023'

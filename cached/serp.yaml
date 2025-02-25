@@ -2483,3 +2483,76 @@
   cited_by: 9
   venue: "IEEE Transactions on \u2026"
   year: '2023'
+- title: Evolutionary multitasking for large-scale multiobjective optimization
+  authors: "S Liu, Q Lin, L Feng, KC Wong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9755945/
+  cited_by: 51
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: An evolutionary multitasking optimization framework for constrained multiobjective
+    optimization problems
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9690609/
+  cited_by: 166
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: 'Multi-task optimization and multi-task evolutionary computation in the past
+    five years: A brief review'
+  authors: Q Xu, N Wang, L Wang, W Li, Q Sun
+  url: https://www.mdpi.com/2227-7390/9/8/864
+  cited_by: 61
+  venue: Mathematics
+  year: '2021'
+- title: Constrained multiobjective optimization via multitasking and knowledge transfer
+  authors: F Ming, W Gong, L Wang, L Gao
+  url: https://ieeexplore.ieee.org/abstract/document/9993796/
+  cited_by: 55
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Multisurrogate-assisted multitasking particle swarm optimization for expensive
+    multimodal problems
+  authors: "X Ji, Y Zhang, D Gong, X Sun\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9615147/
+  cited_by: 61
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: Evolutionary multitasking with global and local auxiliary tasks for constrained
+    multi-objective optimization
+  authors: "K Qiao, J Liang, Z Liu, K Yu, C Yue\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10251084/
+  cited_by: 39
+  venue: "IEEE/CAA Journal of \u2026"
+  year: '2023'
+- title: Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective
+    optimization
+  authors: F Ming, W Gong, L Gao
+  url: https://ieeexplore.ieee.org/abstract/document/10102380/
+  cited_by: 38
+  venue: "IEEE Computational Intelligence \u2026"
+  year: '2023'
+- title: A meta-knowledge transfer-based differential evolution for multitask optimization
+  authors: JY Li, ZH Zhan, KC Tan, J Zhang
+  url: https://ieeexplore.ieee.org/abstract/document/9627943/
+  cited_by: 132
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: Dynamic auxiliary task-based evolutionary multitasking for constrained multiobjective
+    optimization
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9774845/
+  cited_by: 122
+  venue: "IEEE Transactions \u2026"
+  year: '2022'
+- title: Quality diversity for multi-task optimization
+  authors: JB Mouret, G Maguire
+  url: https://dl.acm.org/doi/abs/10.1145/3377930.3390203
+  cited_by: 66
+  venue: "Proceedings of the 2020 Genetic and \u2026"
+  year: '2020'
+- title: Constraints separation based evolutionary multitasking for constrained multi-objective
+    optimization problems
+  authors: "K Qiao, J Liang, K Yu, X Ban, C Yue\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10605756/
+  cited_by: 8
+  venue: "IEEE/CAA Journal of \u2026"
+  year: '2024'

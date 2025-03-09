@@ -13,153 +13,154 @@ This repository:
 
 | Index | Year | Title | Venue | CitedBy |
 |-------|------|-------|-------|---------|
-| [433](https://ieeexplore.ieee.org/abstract/document/10819482/) | 2025 | Evolutionary Competitive Multiobjective Multitasking: One-Pass Optimization of Heterogeneous Pareto Solutions | IEEE Transactions on … | 0 |
-| [432](https://ieeexplore.ieee.org/abstract/document/10819482/) | 2025 | Evolutionary Competitive Multiobjective Multitasking: One-Pass Optimization of Heterogeneous Pareto Solutions | IEEE Transactions on … | 1 |
-| [431](https://ieeexplore.ieee.org/abstract/document/10906435/) | 2025 | Evolutionary Multitask Optimization for Multiform Feature Selection in Classification | IEEE Transactions … | 0 |
-| [430](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 4 |
-| [429](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 18 |
-| [428](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 18 |
-| [427](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An Evolutionary Multitasking Optimization Algorithm for Multi-Objective Recommendations | Information Sciences | 0 |
-| [426](https://www.sciencedirect.com/science/article/pii/S0957417424019729) | 2024 | Multitasking optimization for the imaging problem in electrical capacitance tomography | Expert Systems with Applications | 0 |
-| [425](https://www.sciencedirect.com/science/article/pii/S2210650224002657) | 2024 | Coevolutionary multitasking for constrained multiobjective optimization | Swarm and Evolutionary Computation | 1 |
-| [424](https://www.sciencedirect.com/science/article/pii/S2210650224001081) | 2024 | Constrained multitasking optimization via co-evolution and domain adaptation | Swarm and Evolutionary Computation | 1 |
-| [423](https://ieeexplore.ieee.org/abstract/document/10747213/) | 2024 | Evolutionary Multitasking With Adaptive Knowledge Transfer for Expensive Multiobjective Optimization | IEEE Transactions on … | 0 |
-| [422](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 19 |
-| [421](https://ieeexplore.ieee.org/abstract/document/10459256/) | 2024 | Improved Evolutionary Multitasking Optimization Algorithm With Similarity Evaluation of Search Behavior | IEEE Transactions on … | 3 |
-| [420](https://ieeexplore.ieee.org/abstract/document/10753480/) | 2024 | A Sparsity Knowledge Transfer-Based Evolutionary Algorithm for Large-Scale Multitasking Multi-Objective Optimization | IEEE Transactions on … | 0 |
-| [419](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive Multitasking for Computational Resource Allocation in Evolutionary Constrained Multi-Objective Optimization | IEEE Transactions on Evolutionary … | 9 |
-| [418](https://ieeexplore.ieee.org/abstract/document/10605756/) | 2024 | Constraints separation based evolutionary multitasking for constrained multi-objective optimization problems | IEEE/CAA Journal of … | 5 |
-| [417](https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Quantifying_Task_Priority_for_Multi-Task_Optimization_CVPR_2024_paper.html) | 2024 | Quantifying Task Priority for Multi-Task Optimization | … of the IEEE/CVF Conference on … | 2 |
-| [416](https://link.springer.com/article/10.1007/s13369-023-08251-4) | 2024 | Multitask Particle Swarm Optimization Algorithm Based on Dual Spatial Similarity | Arabian Journal for … | 1 |
-| [415](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 6 |
-| [414](https://ieeexplore.ieee.org/abstract/document/10704259/) | 2024 | Evolutionary Multitask Optimization with Multi-Element Transfer | … on Data-driven Optimization … | 0 |
-| [413](https://link.springer.com/article/10.1007/s44196-024-00569-7) | 2024 | An evolutionary multitasking ant colony optimization method based on population diversity control for multimodal transport problems | International Journal of Computational Intelligence … | 2 |
-| [412](https://www.sciencedirect.com/science/article/pii/S0167739X24001626) | 2024 | Evolutionary multitasking for multiobjective optimization based on hybrid differential evolution and multiple search strategy | Future Generation … | 2 |
-| [411](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 20 |
-| [410](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 7 |
-| [409](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 19 |
-| [408](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 19 |
-| [407](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An Evolutionary Multitasking Optimization Algorithm for Multi-Objective Recommendations | Information Sciences | 1 |
-| [406](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive Multitasking for Computational Resource Allocation in Evolutionary Constrained Multi-Objective Optimization | IEEE Transactions on Evolutionary … | 10 |
-| [405](https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Quantifying_Task_Priority_for_Multi-Task_Optimization_CVPR_2024_paper.html) | 2024 | Quantifying Task Priority for Multi-Task Optimization | … of the IEEE/CVF Conference on … | 3 |
-| [404](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 8 |
-| [403](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 20 |
-| [402](https://www.sciencedirect.com/science/article/pii/S2210650224001081) | 2024 | Constrained multitasking optimization via co-evolution and domain adaptation | Swarm and Evolutionary Computation | 2 |
-| [401](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 21 |
-| [400](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 21 |
-| [399](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive Multitasking for Computational Resource Allocation in Evolutionary Constrained Multi-Objective Optimization | IEEE Transactions on Evolutionary … | 11 |
-| [398](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 9 |
-| [397](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 5 |
-| [396](https://ieeexplore.ieee.org/abstract/document/10459256/) | 2024 | Improved Evolutionary Multitasking Optimization Algorithm With Similarity Evaluation of Search Behavior | IEEE Transactions on … | 4 |
-| [395](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 10 |
-| [394](https://www.mdpi.com/2313-7673/9/10/604) | 2024 | Adaptive Bi-Operator Evolution for Multitasking Optimization Problems | Biomimetics | 1 |
-| [393](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 6 |
-| [392](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 7 |
-| [391](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 20 |
-| [390](https://ieeexplore.ieee.org/abstract/document/10682808/) | 2024 | Scheduling Constrained Cloud Workflow Tasks via Evolutionary Multitasking Optimization with Adaptive Knowledge Transfer | IEEE Transactions on Services … | 1 |
-| [389](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 22 |
-| [388](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 11 |
-| [387](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 22 |
-| [386](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 24 |
-| [385](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An Evolutionary Multitasking Optimization Algorithm for Multi-Objective Recommendations | Information Sciences | 2 |
-| [384](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 12 |
-| [383](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 22 |
-| [382](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An evolutionary multitasking optimization algorithm for multi-objective recommendations | Information Sciences | 2 |
-| [381](https://ieeexplore.ieee.org/abstract/document/10459256/) | 2024 | Improved evolutionary multitasking optimization algorithm with similarity evaluation of search behavior | IEEE Transactions on … | 4 |
-| [380](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary multitask optimization with lower confidence bound-based solution selection strategy | IEEE Transactions on … | 22 |
-| [379](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive multitasking for computational resource allocation in evolutionary constrained multi-objective optimization | IEEE Transactions on Evolutionary … | 11 |
-| [378](https://www.sciencedirect.com/science/article/pii/S221065022400107X) | 2024 | Adaptive knowledge transfer-based particle swarm optimization for constrained multitask optimization | Swarm and Evolutionary Computation | 3 |
-| [377](http://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Quantifying_Task_Priority_for_Multi-Task_Optimization_CVPR_2024_paper.html) | 2024 | Quantifying task priority for multi-task optimization | … of the IEEE/CVF Conference on … | 4 |
-| [376](https://ieeexplore.ieee.org/abstract/document/10453338/) | 2024 | A surrogate-assisted evolutionary framework for expensive multitask optimization problems | IEEE Transactions on … | 5 |
-| [375](https://ieeexplore.ieee.org/abstract/document/10509586/) | 2024 | A multitask-assisted evolutionary algorithm for constrained multimodal multiobjective optimization | IEEE Transactions on Evolutionary … | 4 |
-| [374](https://dl.acm.org/doi/abs/10.1145/3638529.3653989) | 2024 | Transfer search directions among decomposed subtasks for evolutionary multitasking in multiobjective optimization | Proceedings of the Genetic and Evolutionary … | 2 |
-| [373](https://ieeexplore.ieee.org/abstract/document/10605756/) | 2024 | Constraints separation based evolutionary multitasking for constrained multi-objective optimization problems | IEEE/CAA Journal of … | 8 |
-| [372](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive multitasking for computational resource allocation in evolutionary constrained multi-objective optimization | IEEE Transactions on Evolutionary … | 12 |
-| [371](https://ieeexplore.ieee.org/abstract/document/10747213/) | 2024 | Evolutionary Multitasking With Adaptive Knowledge Transfer for Expensive Multiobjective Optimization | IEEE Transactions on … | 1 |
-| [370](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 34 |
-| [369](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 36 |
-| [368](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 17 |
-| [367](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 10 |
-| [366](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 17 |
-| [365](https://www.sciencedirect.com/science/article/pii/S0950705122011200) | 2023 | Enhancing evolutionary multitasking optimization by leveraging inter-task knowledge transfers and improved evolutionary operators | Knowledge-Based … | 10 |
-| [364](https://ieeexplore.ieee.org/abstract/document/10251084/) | 2023 | Evolutionary multitasking with global and local auxiliary tasks for constrained multi-objective optimization | IEEE/CAA Journal of … | 36 |
-| [363](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 16 |
-| [362](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 32 |
-| [361](https://ieeexplore.ieee.org/abstract/document/10075542/) | 2023 | Multitask particle swarm optimization with heterogeneous domain adaptation | IEEE Transactions on … | 12 |
-| [360](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 39 |
-| [359](https://ieeexplore.ieee.org/abstract/document/10106646/) | 2023 | Multitask particle swarm optimization with dynamic transformation | IEEE Transactions on … | 5 |
-| [358](https://www.sciencedirect.com/science/article/pii/S1568494622008249) | 2023 | A surrogate assisted evolutionary multitasking optimization algorithm | Applied Soft Computing | 7 |
-| [357](https://www.aimspress.com/aimspress-data/mbe/2023/5/PDF/mbe-20-05-360.pdf) | 2023 | A multitask optimization algorithm based on elite individual transfer | Math. Biosci. Eng | 2 |
-| [356](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 30 |
-| [355](https://link.springer.com/content/pdf/10.1007/978-981-19-5650-8.pdf) | 2023 | Evolutionary Multi-Task Optimization | Machine Learning: Foundations … | 6 |
-| [354](https://ieeexplore.ieee.org/abstract/document/10171983/) | 2023 | Distributed knowledge transfer for evolutionary multitask multimodal optimization | IEEE Transactions on … | 7 |
-| [353](https://www.sciencedirect.com/science/article/pii/S0957417423000519) | 2023 | Evolutionary competitive multitasking optimization via improved adaptive differential evolution | Expert Systems with Applications | 13 |
-| [352](https://ieeexplore.ieee.org/abstract/document/10141991/) | 2023 | Federated many-task Bayesian optimization | IEEE transactions on evolutionary … | 13 |
-| [351](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 17 |
-| [350](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 40 |
-| [349](https://link.springer.com/content/pdf/10.1007/978-981-19-5650-8.pdf) | 2023 | Evolutionary Multi-Task Optimization | Machine Learning: Foundations … | 7 |
-| [348](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 35 |
-| [347](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 11 |
-| [346](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 18 |
-| [345](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 41 |
-| [344](https://www.sciencedirect.com/science/article/pii/S1568494622008249) | 2023 | A surrogate assisted evolutionary multitasking optimization algorithm | Applied Soft Computing | 9 |
-| [343](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 37 |
-| [342](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 12 |
-| [341](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 31 |
-| [340](https://www.sciencedirect.com/science/article/pii/S0957417423000519) | 2023 | Evolutionary competitive multitasking optimization via improved adaptive differential evolution | Expert Systems with Applications | 14 |
-| [339](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 18 |
-| [338](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 19 |
-| [337](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 13 |
-| [336](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 33 |
-| [335](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 32 |
-| [334](https://www.sciencedirect.com/science/article/pii/S0957417422020437) | 2023 | A Kalman filter-based prediction strategy for multiobjective multitasking optimization | Expert Systems with Applications | 10 |
-| [333](https://www.sciencedirect.com/science/article/pii/S0957417423000519) | 2023 | Evolutionary competitive multitasking optimization via improved adaptive differential evolution | Expert Systems with Applications | 15 |
-| [332](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 38 |
-| [331](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 20 |
-| [330](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 42 |
-| [329](https://www.sciencedirect.com/science/article/pii/S0957417422020437) | 2023 | A Kalman filter-based prediction strategy for multiobjective multitasking optimization | Expert Systems with Applications | 11 |
-| [328](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 21 |
-| [327](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 18 |
-| [326](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 33 |
-| [325](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 34 |
-| [324](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 34 |
-| [323](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 39 |
-| [322](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 14 |
-| [321](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 43 |
-| [320](https://www.aimspress.com/aimspress-data/mbe/2023/5/PDF/mbe-20-05-360.pdf) | 2023 | A multitask optimization algorithm based on elite individual transfer | Math. Biosci. Eng | 3 |
-| [319](https://www.sciencedirect.com/science/article/pii/S0957417422020437) | 2023 | A Kalman filter-based prediction strategy for multiobjective multitasking optimization | Expert Systems with Applications | 12 |
-| [318](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 22 |
-| [317](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 20 |
-| [316](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 35 |
-| [315](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 40 |
-| [314](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 19 |
-| [313](https://www.sciencedirect.com/science/article/pii/S0950705122011200) | 2023 | Enhancing evolutionary multitasking optimization by leveraging inter-task knowledge transfers and improved evolutionary operators | Knowledge-Based … | 11 |
-| [312](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 37 |
-| [311](https://ieeexplore.ieee.org/abstract/document/10075542/) | 2023 | Multitask particle swarm optimization with heterogeneous domain adaptation | IEEE Transactions on … | 14 |
-| [310](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 44 |
-| [309](https://www.sciencedirect.com/science/article/pii/S1568494622008249) | 2023 | A surrogate assisted evolutionary multitasking optimization algorithm | Applied Soft Computing | 10 |
-| [308](https://ieeexplore.ieee.org/abstract/document/10106646/) | 2023 | Multitask particle swarm optimization with dynamic transformation | IEEE Transactions on … | 7 |
-| [307](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 35 |
-| [306](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 36 |
-| [305](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 23 |
-| [304](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 26 |
-| [303](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 21 |
-| [302](https://link.springer.com/article/10.1007/s10489-022-03282-0) | 2023 | Dynamic multitask optimization with improved knowledge transfer mechanism | Applied Intelligence | 3 |
-| [301](https://ieeexplore.ieee.org/abstract/document/10136182/) | 2023 | Multiobjective multitasking optimization with decomposition-based transfer selection | IEEE Transactions on … | 7 |
-| [300](https://ieeexplore.ieee.org/abstract/document/10198367/) | 2023 | Evolutionary multitasking optimization enhanced by geodesic flow kernel | IEEE Transactions on … | 9 |
-| [299](https://ieeexplore.ieee.org/abstract/document/10251084/) | 2023 | Evolutionary multitasking with global and local auxiliary tasks for constrained multi-objective optimization | IEEE/CAA Journal of … | 39 |
-| [298](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 38 |
-| [297](https://ieeexplore.ieee.org/abstract/document/10251084/) | 2023 | Evolutionary multitasking with global and local auxiliary tasks for constrained multi-objective optimization | IEEE/CAA Journal of … | 40 |
-| [296](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 39 |
-| [295](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 37 |
-| [294](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 28 |
-| [293](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 20 |
-| [292](https://ieeexplore.ieee.org/abstract/document/10198367/) | 2023 | Evolutionary multitasking optimization enhanced by geodesic flow kernel | IEEE Transactions on … | 10 |
-| [291](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 38 |
-| [290](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 24 |
-| [289](https://ieeexplore.ieee.org/abstract/document/10075542/) | 2023 | Multitask particle swarm optimization with heterogeneous domain adaptation | IEEE Transactions on … | 15 |
-| [288](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 45 |
-| [287](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 29 |
+| [434](https://ieeexplore.ieee.org/abstract/document/10819482/) | 2025 | Evolutionary Competitive Multiobjective Multitasking: One-Pass Optimization of Heterogeneous Pareto Solutions | IEEE Transactions on … | 0 |
+| [433](https://ieeexplore.ieee.org/abstract/document/10819482/) | 2025 | Evolutionary Competitive Multiobjective Multitasking: One-Pass Optimization of Heterogeneous Pareto Solutions | IEEE Transactions on … | 1 |
+| [432](https://ieeexplore.ieee.org/abstract/document/10906435/) | 2025 | Evolutionary Multitask Optimization for Multiform Feature Selection in Classification | IEEE Transactions … | 0 |
+| [431](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 4 |
+| [430](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 18 |
+| [429](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 18 |
+| [428](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An Evolutionary Multitasking Optimization Algorithm for Multi-Objective Recommendations | Information Sciences | 0 |
+| [427](https://www.sciencedirect.com/science/article/pii/S0957417424019729) | 2024 | Multitasking optimization for the imaging problem in electrical capacitance tomography | Expert Systems with Applications | 0 |
+| [426](https://www.sciencedirect.com/science/article/pii/S2210650224002657) | 2024 | Coevolutionary multitasking for constrained multiobjective optimization | Swarm and Evolutionary Computation | 1 |
+| [425](https://www.sciencedirect.com/science/article/pii/S2210650224001081) | 2024 | Constrained multitasking optimization via co-evolution and domain adaptation | Swarm and Evolutionary Computation | 1 |
+| [424](https://ieeexplore.ieee.org/abstract/document/10747213/) | 2024 | Evolutionary Multitasking With Adaptive Knowledge Transfer for Expensive Multiobjective Optimization | IEEE Transactions on … | 0 |
+| [423](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 19 |
+| [422](https://ieeexplore.ieee.org/abstract/document/10459256/) | 2024 | Improved Evolutionary Multitasking Optimization Algorithm With Similarity Evaluation of Search Behavior | IEEE Transactions on … | 3 |
+| [421](https://ieeexplore.ieee.org/abstract/document/10753480/) | 2024 | A Sparsity Knowledge Transfer-Based Evolutionary Algorithm for Large-Scale Multitasking Multi-Objective Optimization | IEEE Transactions on … | 0 |
+| [420](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive Multitasking for Computational Resource Allocation in Evolutionary Constrained Multi-Objective Optimization | IEEE Transactions on Evolutionary … | 9 |
+| [419](https://ieeexplore.ieee.org/abstract/document/10605756/) | 2024 | Constraints separation based evolutionary multitasking for constrained multi-objective optimization problems | IEEE/CAA Journal of … | 5 |
+| [418](https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Quantifying_Task_Priority_for_Multi-Task_Optimization_CVPR_2024_paper.html) | 2024 | Quantifying Task Priority for Multi-Task Optimization | … of the IEEE/CVF Conference on … | 2 |
+| [417](https://link.springer.com/article/10.1007/s13369-023-08251-4) | 2024 | Multitask Particle Swarm Optimization Algorithm Based on Dual Spatial Similarity | Arabian Journal for … | 1 |
+| [416](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 6 |
+| [415](https://ieeexplore.ieee.org/abstract/document/10704259/) | 2024 | Evolutionary Multitask Optimization with Multi-Element Transfer | … on Data-driven Optimization … | 0 |
+| [414](https://link.springer.com/article/10.1007/s44196-024-00569-7) | 2024 | An evolutionary multitasking ant colony optimization method based on population diversity control for multimodal transport problems | International Journal of Computational Intelligence … | 2 |
+| [413](https://www.sciencedirect.com/science/article/pii/S0167739X24001626) | 2024 | Evolutionary multitasking for multiobjective optimization based on hybrid differential evolution and multiple search strategy | Future Generation … | 2 |
+| [412](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 20 |
+| [411](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 7 |
+| [410](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 19 |
+| [409](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 19 |
+| [408](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An Evolutionary Multitasking Optimization Algorithm for Multi-Objective Recommendations | Information Sciences | 1 |
+| [407](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive Multitasking for Computational Resource Allocation in Evolutionary Constrained Multi-Objective Optimization | IEEE Transactions on Evolutionary … | 10 |
+| [406](https://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Quantifying_Task_Priority_for_Multi-Task_Optimization_CVPR_2024_paper.html) | 2024 | Quantifying Task Priority for Multi-Task Optimization | … of the IEEE/CVF Conference on … | 3 |
+| [405](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 8 |
+| [404](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 20 |
+| [403](https://www.sciencedirect.com/science/article/pii/S2210650224001081) | 2024 | Constrained multitasking optimization via co-evolution and domain adaptation | Swarm and Evolutionary Computation | 2 |
+| [402](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 21 |
+| [401](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 21 |
+| [400](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive Multitasking for Computational Resource Allocation in Evolutionary Constrained Multi-Objective Optimization | IEEE Transactions on Evolutionary … | 11 |
+| [399](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 9 |
+| [398](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 5 |
+| [397](https://ieeexplore.ieee.org/abstract/document/10459256/) | 2024 | Improved Evolutionary Multitasking Optimization Algorithm With Similarity Evaluation of Search Behavior | IEEE Transactions on … | 4 |
+| [396](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 10 |
+| [395](https://www.mdpi.com/2313-7673/9/10/604) | 2024 | Adaptive Bi-Operator Evolution for Multitasking Optimization Problems | Biomimetics | 1 |
+| [394](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 6 |
+| [393](https://ieeexplore.ieee.org/abstract/document/10711878/) | 2024 | Neural network-based knowledge transfer for multitask optimization | IEEE Transactions on … | 7 |
+| [392](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 20 |
+| [391](https://ieeexplore.ieee.org/abstract/document/10682808/) | 2024 | Scheduling Constrained Cloud Workflow Tasks via Evolutionary Multitasking Optimization with Adaptive Knowledge Transfer | IEEE Transactions on Services … | 1 |
+| [390](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary Multitask Optimization with Lower Confidence Bound-based Solution Selection Strategy | IEEE Transactions on … | 22 |
+| [389](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 11 |
+| [388](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 22 |
+| [387](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2024 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 24 |
+| [386](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An Evolutionary Multitasking Optimization Algorithm for Multi-Objective Recommendations | Information Sciences | 2 |
+| [385](https://ieeexplore.ieee.org/abstract/document/10566881/) | 2024 | Evolutionary multitasking descriptor optimization for point cloud registration | IEEE Transactions … | 12 |
+| [384](https://ieeexplore.ieee.org/abstract/document/10398471/) | 2024 | Multiobjective multitask optimization with multiple knowledge types and transfer adaptation | IEEE Transactions on Evolutionary Computation | 22 |
+| [383](https://www.sciencedirect.com/science/article/pii/S0020025524008351) | 2024 | MOREM: An evolutionary multitasking optimization algorithm for multi-objective recommendations | Information Sciences | 2 |
+| [382](https://ieeexplore.ieee.org/abstract/document/10459256/) | 2024 | Improved evolutionary multitasking optimization algorithm with similarity evaluation of search behavior | IEEE Transactions on … | 4 |
+| [381](https://ieeexplore.ieee.org/abstract/document/10379504/) | 2024 | Evolutionary multitask optimization with lower confidence bound-based solution selection strategy | IEEE Transactions on … | 22 |
+| [380](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive multitasking for computational resource allocation in evolutionary constrained multi-objective optimization | IEEE Transactions on Evolutionary … | 11 |
+| [379](https://www.sciencedirect.com/science/article/pii/S221065022400107X) | 2024 | Adaptive knowledge transfer-based particle swarm optimization for constrained multitask optimization | Swarm and Evolutionary Computation | 3 |
+| [378](http://openaccess.thecvf.com/content/CVPR2024/html/Jeong_Quantifying_Task_Priority_for_Multi-Task_Optimization_CVPR_2024_paper.html) | 2024 | Quantifying task priority for multi-task optimization | … of the IEEE/CVF Conference on … | 4 |
+| [377](https://ieeexplore.ieee.org/abstract/document/10453338/) | 2024 | A surrogate-assisted evolutionary framework for expensive multitask optimization problems | IEEE Transactions on … | 5 |
+| [376](https://ieeexplore.ieee.org/abstract/document/10509586/) | 2024 | A multitask-assisted evolutionary algorithm for constrained multimodal multiobjective optimization | IEEE Transactions on Evolutionary … | 4 |
+| [375](https://dl.acm.org/doi/abs/10.1145/3638529.3653989) | 2024 | Transfer search directions among decomposed subtasks for evolutionary multitasking in multiobjective optimization | Proceedings of the Genetic and Evolutionary … | 2 |
+| [374](https://ieeexplore.ieee.org/abstract/document/10605756/) | 2024 | Constraints separation based evolutionary multitasking for constrained multi-objective optimization problems | IEEE/CAA Journal of … | 8 |
+| [373](https://ieeexplore.ieee.org/abstract/document/10472309/) | 2024 | Competitive multitasking for computational resource allocation in evolutionary constrained multi-objective optimization | IEEE Transactions on Evolutionary … | 12 |
+| [372](https://ieeexplore.ieee.org/abstract/document/10747213/) | 2024 | Evolutionary Multitasking With Adaptive Knowledge Transfer for Expensive Multiobjective Optimization | IEEE Transactions on … | 1 |
+| [371](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 34 |
+| [370](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 36 |
+| [369](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 17 |
+| [368](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 10 |
+| [367](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 17 |
+| [366](https://www.sciencedirect.com/science/article/pii/S0950705122011200) | 2023 | Enhancing evolutionary multitasking optimization by leveraging inter-task knowledge transfers and improved evolutionary operators | Knowledge-Based … | 10 |
+| [365](https://ieeexplore.ieee.org/abstract/document/10251084/) | 2023 | Evolutionary multitasking with global and local auxiliary tasks for constrained multi-objective optimization | IEEE/CAA Journal of … | 36 |
+| [364](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 16 |
+| [363](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 32 |
+| [362](https://ieeexplore.ieee.org/abstract/document/10075542/) | 2023 | Multitask particle swarm optimization with heterogeneous domain adaptation | IEEE Transactions on … | 12 |
+| [361](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 39 |
+| [360](https://ieeexplore.ieee.org/abstract/document/10106646/) | 2023 | Multitask particle swarm optimization with dynamic transformation | IEEE Transactions on … | 5 |
+| [359](https://www.sciencedirect.com/science/article/pii/S1568494622008249) | 2023 | A surrogate assisted evolutionary multitasking optimization algorithm | Applied Soft Computing | 7 |
+| [358](https://www.aimspress.com/aimspress-data/mbe/2023/5/PDF/mbe-20-05-360.pdf) | 2023 | A multitask optimization algorithm based on elite individual transfer | Math. Biosci. Eng | 2 |
+| [357](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 30 |
+| [356](https://link.springer.com/content/pdf/10.1007/978-981-19-5650-8.pdf) | 2023 | Evolutionary Multi-Task Optimization | Machine Learning: Foundations … | 6 |
+| [355](https://ieeexplore.ieee.org/abstract/document/10171983/) | 2023 | Distributed knowledge transfer for evolutionary multitask multimodal optimization | IEEE Transactions on … | 7 |
+| [354](https://www.sciencedirect.com/science/article/pii/S0957417423000519) | 2023 | Evolutionary competitive multitasking optimization via improved adaptive differential evolution | Expert Systems with Applications | 13 |
+| [353](https://ieeexplore.ieee.org/abstract/document/10141991/) | 2023 | Federated many-task Bayesian optimization | IEEE transactions on evolutionary … | 13 |
+| [352](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 17 |
+| [351](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 40 |
+| [350](https://link.springer.com/content/pdf/10.1007/978-981-19-5650-8.pdf) | 2023 | Evolutionary Multi-Task Optimization | Machine Learning: Foundations … | 7 |
+| [349](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 35 |
+| [348](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 11 |
+| [347](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 18 |
+| [346](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 41 |
+| [345](https://www.sciencedirect.com/science/article/pii/S1568494622008249) | 2023 | A surrogate assisted evolutionary multitasking optimization algorithm | Applied Soft Computing | 9 |
+| [344](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 37 |
+| [343](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 12 |
+| [342](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 31 |
+| [341](https://www.sciencedirect.com/science/article/pii/S0957417423000519) | 2023 | Evolutionary competitive multitasking optimization via improved adaptive differential evolution | Expert Systems with Applications | 14 |
+| [340](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 18 |
+| [339](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 19 |
+| [338](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 13 |
+| [337](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 33 |
+| [336](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 32 |
+| [335](https://www.sciencedirect.com/science/article/pii/S0957417422020437) | 2023 | A Kalman filter-based prediction strategy for multiobjective multitasking optimization | Expert Systems with Applications | 10 |
+| [334](https://www.sciencedirect.com/science/article/pii/S0957417423000519) | 2023 | Evolutionary competitive multitasking optimization via improved adaptive differential evolution | Expert Systems with Applications | 15 |
+| [333](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 38 |
+| [332](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 20 |
+| [331](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 42 |
+| [330](https://www.sciencedirect.com/science/article/pii/S0957417422020437) | 2023 | A Kalman filter-based prediction strategy for multiobjective multitasking optimization | Expert Systems with Applications | 11 |
+| [329](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 21 |
+| [328](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 18 |
+| [327](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 33 |
+| [326](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 34 |
+| [325](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 34 |
+| [324](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 39 |
+| [323](https://arxiv.org/abs/2312.08134) | 2023 | MToP: A MATLAB optimization platform for evolutionary multitasking | arXiv preprint arXiv … | 14 |
+| [322](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 43 |
+| [321](https://www.aimspress.com/aimspress-data/mbe/2023/5/PDF/mbe-20-05-360.pdf) | 2023 | A multitask optimization algorithm based on elite individual transfer | Math. Biosci. Eng | 3 |
+| [320](https://www.sciencedirect.com/science/article/pii/S0957417422020437) | 2023 | A Kalman filter-based prediction strategy for multiobjective multitasking optimization | Expert Systems with Applications | 12 |
+| [319](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 22 |
+| [318](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 20 |
+| [317](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 35 |
+| [316](https://www.sciencedirect.com/science/article/pii/S0020025522012191) | 2023 | Multitasking optimization via an adaptive solver multitasking evolutionary framework | Information Sciences | 40 |
+| [315](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 19 |
+| [314](https://www.sciencedirect.com/science/article/pii/S0950705122011200) | 2023 | Enhancing evolutionary multitasking optimization by leveraging inter-task knowledge transfers and improved evolutionary operators | Knowledge-Based … | 11 |
+| [313](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 37 |
+| [312](https://ieeexplore.ieee.org/abstract/document/10075542/) | 2023 | Multitask particle swarm optimization with heterogeneous domain adaptation | IEEE Transactions on … | 14 |
+| [311](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 44 |
+| [310](https://www.sciencedirect.com/science/article/pii/S1568494622008249) | 2023 | A surrogate assisted evolutionary multitasking optimization algorithm | Applied Soft Computing | 10 |
+| [309](https://ieeexplore.ieee.org/abstract/document/10106646/) | 2023 | Multitask particle swarm optimization with dynamic transformation | IEEE Transactions on … | 7 |
+| [308](https://www.sciencedirect.com/science/article/pii/S1568494623002004) | 2023 | Knowledge transfer in evolutionary multi-task optimization: A survey | Applied Soft Computing | 35 |
+| [307](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 36 |
+| [306](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 23 |
+| [305](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 26 |
+| [304](https://www.sciencedirect.com/science/article/pii/S156849462300563X) | 2023 | What makes evolutionary multi-task optimization better: A comprehensive survey | Applied Soft Computing | 21 |
+| [303](https://link.springer.com/article/10.1007/s10489-022-03282-0) | 2023 | Dynamic multitask optimization with improved knowledge transfer mechanism | Applied Intelligence | 3 |
+| [302](https://ieeexplore.ieee.org/abstract/document/10136182/) | 2023 | Multiobjective multitasking optimization with decomposition-based transfer selection | IEEE Transactions on … | 7 |
+| [301](https://ieeexplore.ieee.org/abstract/document/10198367/) | 2023 | Evolutionary multitasking optimization enhanced by geodesic flow kernel | IEEE Transactions on … | 9 |
+| [300](https://ieeexplore.ieee.org/abstract/document/10251084/) | 2023 | Evolutionary multitasking with global and local auxiliary tasks for constrained multi-objective optimization | IEEE/CAA Journal of … | 39 |
+| [299](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 38 |
+| [298](https://ieeexplore.ieee.org/abstract/document/10251084/) | 2023 | Evolutionary multitasking with global and local auxiliary tasks for constrained multi-objective optimization | IEEE/CAA Journal of … | 40 |
+| [297](https://ieeexplore.ieee.org/abstract/document/10102380/) | 2023 | Adaptive auxiliary task selection for multitasking-assisted constrained multi-objective optimization | IEEE Computational Intelligence … | 39 |
+| [296](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 37 |
+| [295](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 28 |
+| [294](https://ieeexplore.ieee.org/abstract/document/10011560/) | 2023 | Diversified knowledge transfer strategy for multitasking particle swarm optimization | IEEE Transactions on … | 20 |
+| [293](https://ieeexplore.ieee.org/abstract/document/10198367/) | 2023 | Evolutionary multitasking optimization enhanced by geodesic flow kernel | IEEE Transactions on … | 10 |
+| [292](https://ieeexplore.ieee.org/abstract/document/10178002/) | 2023 | Multiple tasks for multiple objectives: A new multiobjective optimization method via multitask optimization | IEEE Transactions on … | 38 |
+| [291](https://ojs.istp-press.com/jait/article/view/149) | 2023 | Evolutionary multitask optimization in real-world applications: A survey | Journal of Artificial … | 24 |
+| [290](https://ieeexplore.ieee.org/abstract/document/10075542/) | 2023 | Multitask particle swarm optimization with heterogeneous domain adaptation | IEEE Transactions on … | 15 |
+| [289](https://ieeexplore.ieee.org/abstract/document/10130298/) | 2023 | Block-level knowledge transfer for evolutionary multitask optimization | IEEE Transactions on … | 45 |
+| [288](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 29 |
+| [287](https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html) | 2023 | Famo: Fast adaptive multitask optimization | Advances in Neural … | 30 |
 | [286](https://ieeexplore.ieee.org/abstract/document/9755945/) | 2022 | Evolutionary multitasking for large-scale multiobjective optimization | IEEE Transactions on … | 48 |
 | [285](https://ieeexplore.ieee.org/abstract/document/9690609/) | 2022 | An evolutionary multitasking optimization framework for constrained multiobjective optimization problems | IEEE Transactions on … | 145 |
 | [284](https://ieeexplore.ieee.org/abstract/document/9737234/) | 2022 | Orthogonal transfer for multitask optimization | IEEE Transactions on … | 56 |

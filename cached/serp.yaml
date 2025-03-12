@@ -2811,3 +2811,34 @@
   cited_by: 30
   venue: "Advances in Neural \u2026"
   year: '2023'
+- title: 'A review on evolutionary multitask optimization: Trends and challenges'
+  authors: "T Wei, S Wang, J Zhong, D Liu\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9665768/
+  cited_by: 135
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: 'Famo: Fast adaptive multitask optimization'
+  authors: B Liu, Y Feng, P Stone, Q Liu
+  url: https://proceedings.neurips.cc/paper_files/paper/2023/hash/b2fe1ee8d936ac08dd26f2ff58986c8f-Abstract-Conference.html
+  cited_by: 31
+  venue: "Advances in Neural \u2026"
+  year: '2023'
+- title: 'What makes evolutionary multi-task optimization better: A comprehensive
+    survey'
+  authors: H Zhao, X Ning, X Liu, C Wang, J Liu
+  url: https://www.sciencedirect.com/science/article/pii/S156849462300563X
+  cited_by: 22
+  venue: Applied Soft Computing
+  year: '2023'
+- title: A meta-knowledge transfer-based differential evolution for multitask optimization
+  authors: JY Li, ZH Zhan, KC Tan, J Zhang
+  url: https://ieeexplore.ieee.org/abstract/document/9627943/
+  cited_by: 135
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: 'Knowledge transfer in evolutionary multi-task optimization: A survey'
+  authors: Z Tan, L Luo, J Zhong
+  url: https://www.sciencedirect.com/science/article/pii/S1568494623002004
+  cited_by: 36
+  venue: Applied Soft Computing
+  year: '2023'

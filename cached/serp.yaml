@@ -3231,3 +3231,35 @@
   cited_by: 12
   venue: "IEEE/CAA Journal of \u2026"
   year: '2024'
+- title: Multiobjective multifactorial optimization in evolutionary multitasking
+  authors: "A Gupta, YS Ong, L Feng\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/7464295/
+  cited_by: 401
+  venue: "IEEE transactions on \u2026"
+  year: '2016'
+- title: Evolutionary multitasking for large-scale multiobjective optimization
+  authors: "S Liu, Q Lin, L Feng, KC Wong\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9755945/
+  cited_by: 53
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Evolutionary multitasking with global and local auxiliary tasks for constrained
+    multi-objective optimization
+  authors: "K Qiao, J Liang, Z Liu, K Yu, C Yue\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10251084/
+  cited_by: 47
+  venue: "IEEE/CAA Journal of \u2026"
+  year: '2023'
+- title: Evolutionary multitasking for feature selection in high-dimensional classification
+    via particle swarm optimization
+  authors: K Chen, B Xue, M Zhang, F Zhou
+  url: https://ieeexplore.ieee.org/abstract/document/9496593/
+  cited_by: 142
+  venue: "IEEE Transactions on \u2026"
+  year: '2021'
+- title: Multi-task bayesian optimization
+  authors: K Swersky, J Snoek, RP Adams
+  url: https://proceedings.neurips.cc/paper/2013/hash/f33ba15effa5c10e873bf3842afb46a6-Abstract.html
+  cited_by: 979
+  venue: "Advances in neural \u2026"
+  year: '2013'

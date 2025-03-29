@@ -3263,3 +3263,50 @@
   cited_by: 979
   venue: "Advances in neural \u2026"
   year: '2013'
+- title: 'Multiple tasks for multiple objectives: A new multiobjective optimization
+    method via multitask optimization'
+  authors: JY Li, ZH Zhan, Y Li, J Zhang
+  url: https://ieeexplore.ieee.org/abstract/document/10178002/
+  cited_by: 40
+  venue: "IEEE Transactions on \u2026"
+  year: '2023'
+- title: An evolutionary multitasking optimization framework for constrained multiobjective
+    optimization problems
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9690609/
+  cited_by: 175
+  venue: "IEEE Transactions on \u2026"
+  year: '2022'
+- title: Multitasking genetic algorithm (MTGA) for fuzzy system optimization
+  authors: D Wu, X Tan
+  url: https://ieeexplore.ieee.org/abstract/document/8967000/
+  cited_by: 95
+  venue: IEEE Transactions on Fuzzy Systems
+  year: '2020'
+- title: Evolutionary multitasking with global and local auxiliary tasks for constrained
+    multi-objective optimization
+  authors: "K Qiao, J Liang, Z Liu, K Yu, C Yue\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10251084/
+  cited_by: 49
+  venue: "IEEE/CAA Journal of \u2026"
+  year: '2023'
+- title: Dynamic auxiliary task-based evolutionary multitasking for constrained multiobjective
+    optimization
+  authors: "K Qiao, K Yu, B Qu, J Liang, H Song\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/9774845/
+  cited_by: 129
+  venue: "IEEE Transactions \u2026"
+  year: '2022'
+- title: A novel multitasking ant colony optimization method for detecting multiorder
+    SNP interactions
+  authors: "S Tuo, C Li, F Liu, YL Zhu, TR Chen, ZY Feng\u2026"
+  url: https://link.springer.com/article/10.1007/s12539-022-00530-2
+  cited_by: 18
+  venue: "Interdisciplinary \u2026"
+  year: '2022'
+- title: Distributed knowledge transfer for evolutionary multitask multimodal optimization
+  authors: "K Gao, C Yang, J Ding, KC Tan\u2026"
+  url: https://ieeexplore.ieee.org/abstract/document/10171983/
+  cited_by: 11
+  venue: "IEEE Transactions on \u2026"
+  year: '2023'
